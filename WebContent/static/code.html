@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: #747474;
+	font-family: "MicrosoftYaHei";
+	font-size: 14px;
+}
+
+#qrcode {
+	height: 200px;
+	overflow: hidden;
+	display: none;
+}
+</style>
+</head>
+<body scroll="no">
+
+	<div id="qrcode"></div>
+	<!-- 	<script
+		src="http://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script> -->
+	<script src="wxLogin.js"></script>
+	<script type="text/javascript" src="jquery/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+		$(document)
+				.ready(
+						function() {
+
+							var obj = new WxLogin(
+									{
+										id : "qrcode",
+										appid : "wxf81717054b972c37",
+										scope : "snsapi_login",
+										redirect_uri : "http%3A%2F%2Fdc.hanlinbode.com%3A8183%2Fwxurl%2Fpcwxlogin",
+										state : "",
+										href : "https://lyfff.oss-cn-shanghai.aliyuncs.com/qrcode2.css",
+										ready : function() {
+											$("#qrcode").show();
+										}
+									});
+
+						});
+	</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+.picScroll-left {
+	overflow: hidden;
+	position: relative;
+	background: #cacaca;
+	padding: 30px 0px;
+}
+
+.picScroll-left .hd {
+	overflow: hidden;
+	height: 30px;
+	background: #f4f4f4;
+	padding: 0 10px;
+}
+
+.picScroll-left .hd .prev, .picScroll-left .hd .next {
+	display: block;
+	width: 5px;
+	height: 9px;
+	float: right;
+	margin-right: 5px;
+	margin-top: 10px;
+	overflow: hidden;
+	cursor: pointer;
+	background: url("../images/arrow.png") 0 0 no-repeat;
+}
+
+.picScroll-left .hd .next {
+	background-position: 0 -50px;
+}
+
+.picScroll-left .hd .prevStop {
+	background-position: -60px 0;
+}
+
+.picScroll-left .hd .nextStop {
+	background-position: -60px -50px;
+}
+
+.picScroll-left .hd ul {
+	float: right;
+	overflow: hidden;
+	zoom: 1;
+	margin-top: 10px;
+	zoom: 1;
+}
+
+.picScroll-left .hd ul li {
+	float: left;
+	width: 9px;
+	height: 9px;
+	overflow: hidden;
+	margin-right: 5px;
+	text-indent: -999px;
+	cursor: pointer;
+	background: url("../images/icoCircle.gif") 0 -9px no-repeat;
+}
+
+.picScroll-left .hd ul li.on {
+	background-position: 0 0;
+}
+
+.picScroll-left .bd {
+	width: 1000px;
+	margin: auto;
+}
+
+.picScroll-left .bd ul {
+	overflow: hidden;
+	zoom: 1;
+}
+
+.picScroll-left .bd ul li {
+	margin: 0 8px;
+	float: left;
+	_display: inline;
+	overflow: hidden;
+	text-align: center;
+}
+
+.picScroll-left .bd ul li .pic {
+	text-align: center;
+}
+
+.picScroll-left .bd ul li .pic img {
+	width: 300px;
+	display: block;
+	padding: 2px;
+}
+
+.picScroll-left .bd ul li .pic a:hover img {
+	
+}
+
+.picScroll-left .bd ul li .title {
+	line-height: 24px;
+	margin-top: 5px;
+}
+
+.tempWrap {
+	margin: auto;
+}

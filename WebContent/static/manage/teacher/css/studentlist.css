@@ -1,0 +1,300 @@
+@CHARSET "UTF-8";
+
+/*以往成绩弹出框*/
+.scorecontentdiv{
+	height: 400px;
+	width:600px;
+	position: fixed;
+	left: 50%;
+	margin-left: -300px;
+	box-shadow: 1px 4px 32px 8px #333;
+	display: none;
+	top: 50%;
+	background: white;
+	z-index: 9999;
+	/*border: 1px solid red;*/
+}
+.scoredivtitle{
+	height: 40px;
+	width: 100%;
+	float: left;
+	font-size: 16px;
+	line-height: 40px;
+	/*border: 1px solid yellow;*/
+}
+.scorecontent{
+	height: 360px;
+	width: 100%;
+	float: left;
+	overflow: auto;
+	/*border: 1px solid black;*/
+}
+.scorecontent table{
+	width: 100%;
+	table-layout:fixed;
+}
+.scorecontent table td, th {
+	text-align: left;
+	padding: 8px 0 8px 0;
+	word-wrap:break-word;
+}
+.scorecontent table th {
+	background-color: #fcf6eb;
+	font-weight: bold;
+}
+
+.scorecontent table tr {
+	text-align: left;
+	height: 30px;
+}
+
+.scorecontent table tr:nth-child(odd) {
+	text-align: left;
+	background-color: #e9f3ff;
+}
+#scorelistcancel{
+	font-size: 16px;
+	color:#3E82DA;
+	display: block;
+	float: right;
+	margin-right: 10px;
+	height: 40px;
+	line-height: 40px;
+}
+.canbtn{
+	cursor: pointer;
+}
+/*以往表现弹出框*/
+.studycontentdiv{
+	height: 400px;
+	width:600px;
+	position: fixed;
+	left: 50%;
+	margin-left: -300px;
+	box-shadow: 1px 4px 32px 8px #333;
+	display: none;
+	top: 50%;
+	background: white;
+	z-index: 9999;
+}
+.studydivtitle{
+	height: 40px;
+	width: 100%;
+	float: left;
+	font-size: 16px;
+	line-height: 40px;
+}
+.studycontent{
+	height: 360px;
+	width: 100%;
+	float: left;
+	overflow: auto;
+}
+.studycontent table{
+	width: 100%;
+}
+.studycontent table td, th {
+	text-align: left;
+	padding: 8px 0 8px 0;
+}
+.studycontent table th {
+	background-color: #fcf6eb;
+	font-weight: bold;
+}
+.studycontent table td {
+
+}
+.studycontent table tr {
+	text-align: left;
+	height: 50px;
+}
+
+.studycontent table tr:nth-child(odd) {
+	text-align: left;
+	background-color: #e9f3ff;
+}
+#studylistcancel{
+	font-size: 16px;
+	color:#3E82DA;
+	display: block;
+	float: right;
+	margin-right: 10px;
+	height: 40px;
+	line-height: 40px;
+}
+/*以往课消弹出框*/
+.checkincontentdiv{
+	height: 400px;
+	width:600px;
+	position: fixed;
+	left: 50%;
+	margin-left: -300px;
+	box-shadow: 1px 4px 32px 8px #333;
+	display: none;
+	top: 50%;
+	background: white;
+	z-index: 9999;
+}
+.checkindivtitle{
+	height: 40px;
+	width: 100%;
+	float: left;
+	font-size: 16px;
+	line-height: 40px;
+}
+.checkincontent{
+	height: 360px;
+	width: 100%;
+	float: left;
+	overflow: auto;
+}
+.checkincontent table{
+	width: 100%;
+}
+.checkincontent table td, th {
+	text-align: left;
+	padding: 8px 0 8px 0;
+}
+.checkincontent table th {
+	background-color: #fcf6eb;
+	font-weight: bold;
+}
+.checkincontent table td {
+
+}
+.checkincontent table tr {
+	text-align: left;
+	height: 50px;
+}
+
+.checkincontent table tr:nth-child(odd) {
+	text-align: left;
+	background-color: #e9f3ff;
+}
+#checkinlistcancel{
+	font-size: 16px;
+	color:#3E82DA;
+	display: block;
+	float: right;
+	margin-right: 10px;
+	height: 40px;
+	line-height: 40px;
+}
+/*新增成绩弹出框*/
+.addscorediv{
+	height: 300px;
+	width:400px;
+	position: fixed;
+	left: 50%;
+	margin-left: -200px;
+	box-shadow: 1px 4px 32px 8px #333;
+	display: none;
+	top: 50%;
+	background: white;
+	z-index: 9999;
+}
+.addscoretitle{
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 20px;
+	width: 100%;
+	float: left;	
+}
+.addscorecontent{
+	top:40px;
+	bottom: 50px;
+	width: 100%;
+	float: left;
+}
+.addscorefoot{
+	height: 50px;
+	width: 100%;
+	float: left;
+}
+.formrow{
+	height: 40px;
+	float: left;
+	width: 100%；
+	padding:10px 0px;
+}
+.rowlabel{
+	font-size: 16px;
+	height: 40px;
+	float: left;
+	text-indent: 20px;
+	width: 100px;
+}
+.rowinput{
+	height: 40px;
+	float: left;
+	font-size: 16px;
+	width: 300px;
+}
+.rowinput input{
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	width: 250px;
+	border-radius: 3px;
+}
+.rowinput textarea{
+	height: 50px;
+	line-height: 25px;
+	font-size: 16px;
+	width: 250px;
+	border-radius: 3px;
+	
+}
+/*新增表现弹出框*/
+.addstudydiv{
+	height: 300px;
+	width:400px;
+	position: fixed;
+	left: 50%;
+	margin-left: -200px;
+	box-shadow: 1px 4px 32px 8px #333;
+	display: none;
+	top: 50%;
+	background: white;
+	z-index: 9999;
+}
+.addstudytitle{
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 20px;
+	width: 100%;
+	float: left;	
+}
+.addcheckindiv{
+	height: 300px;
+	width:400px;
+	position: fixed;
+	left: 50%;
+	margin-left: -200px;
+	box-shadow: 1px 4px 32px 8px #333;
+	display: none;
+	top: 50%;
+	background: white;
+	z-index: 9999;
+}
+.addcheckintitle{
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 20px;
+	width: 100%;
+	float: left;
+}
+.addcheckincontent{
+	top:40px;
+	bottom: 50px;
+	width: 100%;
+	float: left;
+}
+.addcheckinfoot{
+	height: 50px;
+	width: 100%;
+	float: left;
+}

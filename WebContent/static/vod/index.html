@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>OSS web直传</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+	<form action="">
+		<input type="file" name="file" id="files" multiple />
+	</form>
+	<button onclick="sub()">提交</button>
+</body>
+<script src="aliyun-sdk.min.js"></script>
+<script src="vod-sdk-upload-1.0.6.min.js"></script>
+<script src="jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+var uploadAuth = "eyJTZWN1cml0eVRva2VuIjoiQ0FJU3NnUjFxNkZ0NUIyeWZTaklwYnJzT1lQU3BldHN6NjJQYkd6QTBIQUZPcnBkdGIzZ3J6ejJJSHBLZVhkdUFlQVhzL28wbW1oWjcvWVlsclVxRzhjZUhoZWRNSm9xc3N3UHJWbitKcGZadjh1ODRZQURpNUNqUVlOMDJPeExuNTI4V2Y3d2FmK0FVSFBIQ1RtZDVLRVpvOWJUY1RHbFFDWVRXUC90b0pWN2I5TVJjeENsWkQ1ZGZybC9MUmRqcjhsb21CS3pVUEcyS1V6U24zYjNCa2hsc1JZZThtUms4dmFhMzhtQTZ3TFhsa0hIMHVzU3JvaVRVWisvZEp0Tk9wWmpVdDZwMGNscmNyYkF5Q2RLOXlWUzhLQi9nTTRpL2l6YzdPeUZCMTVZN3kyUEtmYTJpTnAwTjExRWZxdzlFcUo4cGVMZ3Z2cGdxNDZna0ovc21UMUtPUGxSWGpqU1laMmszTXJjRWZtMUM4NDljci8zV1FUS3ljdmRINVB5cVI4QmZIWUhOUnREWWNZY01udDNBQkJPT2piQk1mMkQrVXZXUnhxblY2bWQyYnNxN0lKeHlGems1cmp2SUVPVUVaR1l5am9nTTRVZ2REazhWWGdzMEhmbWI3VU5maUZWYmxwakhNejFkNGhvYXcxRW9xNmF0Vy9rWHlaN25IWk1wSys4TmJHRXU2WmFNOTJtQWNvWWk5VkVPTTRYNmpWNkV3aXlScXVwa0Y4WmN6eGhXUEZJMGFYZ1B0amp1ZURha2J6TVQ2dWZWOXhYNFF3RlhXRDk4Ry9VR1NzTGFIYXF2NEJtT0FERXZweUprUGFUdFpaNFRDbFd2NEFBVmwvYUlZczE4UVU4di9QdnNDNytxckd6RGlxWW1VTWo0Y1RkOG9WMTdrOXBRK3lwbWVmNnZFU0Y1aUxOUC9kaHlKYUtCall4R1VYdUt5Wmp2Tm1XaDJNYW9TNEduMXE5TWcwazkwK3IwbUs5YkR5MUpUcC9MYkV2R29BQkorUUsvVXdLcUJFQU5ZVzRFK0hyZlQrQXp5UjZVY0xXQ05pM1EyS0MrMi9vUUpTSXpFUUZSMTdkRWNtTHVNNTMweUdQMnNFUmJWZW9TeFo4TkZOa0FULy9MZGRKR2p4SDFQbjQ0TUlpVi9SRjJJY1U3WTB4NnVVNkw4cTBoVmoxbGh5M1FZU2oxbjVSaGk1TU9mcmVDZFJXSXoyT1RkSmNoYVNPOW9OZTZtRT0iLCJBY2Nlc3NLZXlJZCI6IlNUUy5EeVlyOWZINE14b2RuSnE0cFA2NXFaeEtNIiwiQWNjZXNzS2V5U2VjcmV0IjoiOXBta21ES056bXl1R3NwODdzUVdQWnNUMlk2TkVVTXhxY3JoTFdFYjlENHAiLCJFeHBpcmF0aW9uIjoiMzYwMCJ9";
+var uploadAddress = "eyJFbmRwb2ludCI6Imh0dHBzOi8vb3NzLWNuLXNoYW5naGFpLmFsaXl1bmNzLmNvbSIsIkJ1Y2tldCI6ImluLTIwMTcwNjI3MTQyOTE2ODQ0LWVxb3JwZW84bHEiLCJGaWxlTmFtZSI6InZpZGVvLzQ5Nzc5MTdGLTE1RDgzMTdEOEQ3LTE4MDMtMzMxNS05MjQtMDA0MjcubXA0In0=";
+	var uploader = new VODUpload({
+		// 开始上传
+		'onUploadstarted' : function(uploadInfo) {
+			log("onUploadStarted:" + uploadInfo.file.name + ", endpoint:"
+					+ uploadInfo.endpoint + ", bucket:" + uploadInfo.bucket
+					+ ", object:" + uploadInfo.object);
+			uploader.setUploadAuthAndAddress(uploadInfo, uploadAuth,
+					uploadAddress);
+		},
+		// 文件上传成功
+		'onUploadSucceed' : function(uploadInfo) {
+			log("onUploadSucceed: " + uploadInfo.file.name + ", endpoint:"
+					+ uploadInfo.endpoint + ", bucket:" + uploadInfo.bucket
+					+ ", object:" + uploadInfo.object);
+		},
+		// 文件上传失败
+		'onUploadFailed' : function(uploadInfo, code, message) {
+			log("onUploadFailed: file:" + uploadInfo.file.name + ",code:"
+					+ code + ", message:" + message);
+		},
+		// 文件上传进度，单位：字节
+		'onUploadProgress' : function(uploadInfo, totalSize, uploadedSize) {
+			log("onUploadProgress:file:" + uploadInfo.file.name + ", fileSize:"
+					+ totalSize + ", percent:"
+					+ Math.ceil(uploadedSize * 100 / totalSize) + "%");
+		},
+		// 上传凭证超时
+		'onUploadTokenExpired' : function() {
+			console.log("onUploadTokenExpired");
+			// uploader.resumeUploadWithAuth(uploadAuth);
+		}
+	});
+	uploader.init();
+	$("#files")
+			.bind(
+					"change",
+					function(event) {
+						var userData = '{"Vod":{"UserData":"{"IsShowWaterMark":"false","Priority":"7"}"}}';
+						uploader.addFile(event.target.files[0], null, null,
+								null, userData);
+					});
+
+	function sub() {
+		uploader.startUpload();
+	}
+	function log(str) {
+		console.log(str);
+	}
+</script>
+</html>

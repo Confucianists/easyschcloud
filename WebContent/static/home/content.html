@@ -1,0 +1,61 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>真会云课堂</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/content.css">
+</head>
+<body>
+<div id="top"></div>
+	<div class="contentdiv">
+		<div class="leftmenu">
+			<div class="menutitle">
+				<div>NAVIGATION</div>
+				<div>服务专区</div>
+			</div>
+			<div class="submenu">
+				<a href="#" class="menua actmenu">联系我们</a>
+				<a href="problems.html" class="menua">常见问题</a>
+
+			</div>
+			<div class="adimgdiv">
+				<img src="image/contentad.png">
+			</div>
+		</div>
+		<div class="rightcontent">
+			<!-- 
+			<div class="contenttitle">
+				<i></i>联系我们
+			</div>
+			 -->
+			<div class="zwcontent">
+				<div class="wenzi">
+					<div style="font-size: 25px;">浙江翰林博德信息技术有限公司</div>
+
+					<div>电话：(0571)-88258825</div>
+					<div>官方微信服务号：Hanlinbode</div>
+					<div>地址：浙江省杭州市滨江区建业路511号华业大厦17楼1702</div>
+				</div>
+				<div class="tupian">
+					<img src="image/contentimg.png">
+				</div>
+			</div>
+
+		</div>
+	</div>
+	 <div id="foot"></div>
+	 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+	$.get("top.html", function(data) {
+		$("#top").html(data);
+		$($(".navbar")[2]).addClass("actnavbar");
+	});
+
+	$.get("foot.html", function(data) {
+		$("#foot").html(data);
+	});
+		
+	</script>
+</body>
+</html>

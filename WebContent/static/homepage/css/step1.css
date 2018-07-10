@@ -1,0 +1,113 @@
+@CHARSET "UTF-8";
+
+.zwcontent {
+	text-align: left;
+	padding-left: 30px;
+	position: relative;
+}
+
+.wenzi {
+	float: left;
+	text-align: left;
+}
+
+.tupian {
+	
+}
+
+.wenzi div {
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+
+.tupian img {
+	display: block;
+}
+
+.adimgdiv {
+	margin-top: 80px;
+}
+
+.adimgdiv img {
+	width: 100%;
+	display: block;
+}
+
+h2, ul, h3 {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style: none outside none;
+}
+
+.timeline {
+	background: url("../image/line4.png") repeat-y 70px 0;
+	overflow: hidden;
+	position: relative;
+	height: 100px;
+	margin: 20px 10px;
+	width: 520px;
+	margin: 40px auto 0 auto;
+}
+
+.timeline-date {
+	overflow: hidden;
+	position: relative;
+}
+
+.timeline-date h2 {
+	background: url("../image/icon9.png") no-repeat 30px 0;
+	height: 87px;
+	margin-bottom: 20px;
+}
+
+.timeline-date h2 span {
+	color: #85bb3c;
+	display: inline-block;
+	font-size: 22px;
+	margin: 32px 281px 0 110px;
+}
+
+.timeline-date ul li {
+	background: url("../image/icon7.png") no-repeat 61px 5px;
+	zoom: 1;
+	height: 70px;
+	margin-bottom: 20px;
+}
+
+.timeline-date ul li h3 {
+	float: left;
+	text-align: right;
+	font-size: 14px;
+	color: #878787;
+	display: block;
+}
+
+.timeline-date ul li h3 span {
+	display: block;
+	color: #ADADAD;
+	font-size: 12px;
+	padding-left: 15px;
+}
+
+.timeline-date ul li dl {
+	margin-top: -5px;
+}
+
+.timeline-date ul li dl.right {
+	float: left;
+	margin-left: 60px;
+	margin-top: -5px;
+	display: block;
+	max-width: 400px;
+}
+
+.timeline-date ul li dl span {
+	display: block;
+	font-size: 16px;
+	padding: 0px 0px 0px 30px;
+	line-height: 30px;
+	text-align: left;
+}

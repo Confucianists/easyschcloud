@@ -1,0 +1,550 @@
+@CHARSET "UTF-8";
+
+.cwbody {
+	height: 100%;
+	margin: auto;
+	width: 1000px;
+	position: relative;
+}
+
+.filebar {
+	height: 80px;
+	border: 1px solid #cfd3d5;
+	text-align: left;
+	background: white;
+	width: 100%;
+}
+
+.filecount {
+	font-size: 25px;
+	color: #39adff;
+}
+
+.fileprocess {
+	height: 100%;
+	padding-left: 10px;
+	line-height: 80px;
+	float: left;
+}
+
+.fileprocess:nth-child(2) {
+	padding-left: 40px !important;
+}
+
+.btndiv {
+	height: 100%;
+	float: left;
+}
+
+.searchdiv {
+	width: 400px;
+	height: 100%;
+	float: right;
+}
+
+}
+.left {
+	float: left;
+	width: 250px;
+}
+
+.right {
+	width: 679px;
+	float: left;
+}
+
+.processall {
+	width: 100%;
+	background: #d7dbdf;
+	height: 15px;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.processuse {
+	height: 100%;
+	width: 60%;
+	background: #92ef55;
+	border-radius: 10px;
+}
+
+.fbottom {
+	margin-top: 10px;
+}
+
+.btndiv .btna {
+	margin-left: 10px;
+}
+
+.btndiv div {
+	
+}
+
+.searchborder {
+	background: #f3f3f3;
+	width: 300px;
+	border-radius: 20px;
+	height: 40px;
+	margin-top: 10px;
+	overflow: hidden;
+	position: relative;
+	float: right;
+	margin-right: 10px;
+}
+
+.searchborder i {
+	background: url('../image/search.png') center;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	left: 10px;
+	top: 8px;
+}
+
+.searchborder input {
+	border: medium none;
+	box-shadow: inset 0 0 0 1000px #f3f3f3;
+	height: 40px;
+	margin-left: 45px;
+	outline: none;
+	width: 185px;
+}
+
+.searchborder a {
+	padding: 10px 20px;
+	background: #39adff;
+	color: white;
+	float: right;
+	cursor: pointer;
+}
+
+.files {
+	
+}
+
+.righttable {
+	position: absolute;
+	left: 0;
+	border: 1px solid #cfd3d5;
+	top: 95px;
+	bottom: 50px;
+	right: 0;
+	background: white;
+}
+
+.cwpagation {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0;
+}
+
+.actionbar {
+	height: 60px;
+	border-bottom: 1px solid #cfd3d5;
+	text-align: left;
+	background: white;
+	width: 98%;
+	margin: auto;
+}
+
+.listdiv {
+	position: absolute;
+	overflow: auto;
+	top: 60px;
+	bottom: 0;
+	width: 100%;
+}
+
+.wkdiv {
+	width: 20%;
+	height: 180px;
+	float: left;
+	text-align: center;
+	padding-top: 20px;
+	cursor: pointer;
+}
+
+.wkimg {
+	border: 1px solid #cfd3d5;
+	height: 120px;
+	width: 90%;
+	margin: auto;
+	background-size: cover;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	background-position: center;
+}
+
+.wktitle {
+	text-align: left;
+	padding-left: 10px;
+	padding: 5px 10px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.wksj {
+	text-align: left;
+	padding-left: 10px;
+}
+
+.imgdiv {
+	border: 1px solid #cfd3d5;
+	width: 150px;
+	height: 100px;
+	position: relative;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.actioncover {
+	position: absolute;
+	background: black;
+	left: 0;
+	right: 0;
+	bottom: -30px;
+	height: 30px;
+	opacity: 0.8;
+	color: white;
+	text-align: left;
+	text-indent: 2px;
+	z-index: 9999;
+	cursor: auto;
+}
+
+.selecttitle {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+	text-align: left;
+	line-height: 25px;
+}
+
+.sdeletea {
+	padding-left: 30px;
+	position: relative;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+.sdeletei {
+	position: absolute;
+	background: url(../image/actionfxs.png) no-repeat center;
+	width: 20px;
+	height: 20px;
+	left: 5px;
+	top: 0px;
+}
+
+.seditea {
+	padding-left: 27px;
+	position: relative;
+	line-height: 30px;
+	cursor: pointer;
+	float: right;
+	margin-right: 10px;
+}
+
+.seditei {
+	position: absolute;
+	background: url(../image/edite.png) no-repeat center;
+	width: 16px;
+	height: 16px;
+	left: 5px;
+	top: 7px;
+}
+
+.controller {
+	border: 1px solid #cfd3d5;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	display: none;
+	background: url(../image/actionxl.png) no-repeat center;
+	background-size: 70%;
+	border-radius: 3px;
+}
+
+.actionbardiv {
+	width: 100px;
+	height: 0px;
+	position: absolute;
+	top: 26px;
+	right: 10px;
+	overflow: hidden;
+	border: 1px solid #cfd3d5;
+	border-radius: 3px;
+	display: none;
+}
+
+.btnbardiv {
+	width: 100%;
+	height: 30px;
+	float: left;
+	line-height: 30px;
+	text-indent: 40px;
+	text-align: left;
+	position: relative;
+}
+
+.selectbtnbardiv {
+	background-color: #39adff;
+}
+
+.btnbardiv i {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 10px;
+	top: 5px;
+}
+
+.i1 {
+	background: url('../image/actionfx.png') no-repeat center;
+}
+
+.i2 {
+	background: url('../image/actioncmm.png') no-repeat center;
+}
+
+.i3 {
+	background: url('../image/actionsc.png') no-repeat center;
+}
+
+.i1s {
+	background: url('../image/actionfxs.png') no-repeat center;
+}
+
+.i2s {
+	background: url('../image/actioncmms.png') no-repeat center;
+}
+
+.i3s {
+	background: url('../image/actionscs.png') no-repeat center;
+}
+
+.deletediv {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: 3px;
+	top: 3px;
+	background: black;
+	opacity: 0.8;
+	line-height: 20px;
+	color: white;
+	border-radius: 50%;
+}
+
+.tipdiv1 {
+	position: fixed;
+	width: 600px;
+	top: 20%;
+	left: 50%;
+	margin-left: -300px;
+	background-color: white;
+	box-shadow: 0 5px 10px #333;
+	display: none;
+	z-index: 9999;
+}
+
+.tipcontent1 {
+	text-align: center;
+	padding: 35px 20px;
+	font-size: 16px;
+}
+
+.tiptitle1 {
+	text-align: left !important;
+}
+
+.viewdiv {
+	position: fixed;
+	width: 800px;
+	z-index: 99999;
+	left: 50%;
+	margin-left: -400px;
+	top: 50%;
+	background: white;
+}
+
+.viewtitle {
+	width: 100%;
+	height: 50px;
+	text-align: left;
+	line-height: 50px;
+	position: relative;
+	border-bottom: 1px solid #cfd3d5;
+}
+
+.editeico {
+	background: url('../image/filerename.png') center no-repeat;
+	width: 40px;
+	height: 50px;
+	float: left;
+	cursor: pointer;
+}
+
+.sureediteico {
+	background: url('../image/surefilerename.png') center no-repeat;
+	width: 40px;
+	height: 50px;
+	float: left;
+	cursor: pointer;
+}
+
+.viewactions {
+	float: right;
+	width: 180px;
+}
+
+.viewactions a {
+	margin-left: 25px;
+}
+
+.viewactions i {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 0;
+	top: 14px;
+}
+
+.viewactions div {
+	
+}
+
+.viewactionbar {
+	width: 60px;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.actviewactionbar a {
+	color: #39adff;
+}
+
+.actviewactionbar .filedeleteico {
+	background: url(../image/filedeleteicos.png) center no-repeat;
+}
+
+.filedeleteico {
+	background: url(../image/filedeleteico.png) center no-repeat;
+}
+
+.filedownloadico {
+	background: url(../image/filedownloadico.png) center no-repeat;
+}
+
+.viewcontent {
+	overflow: auto;
+	position: relative;
+}
+
+.closeview {
+	background: url('../image/closeview.png') center no-repeat;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: -15px;
+	top: -15px;
+	cursor: pointer;
+}
+
+.showname {
+	float: left;
+	max-width: 600px;
+	text-indent: 20px;
+	height: 50px;
+	position: relative;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.uploadprocess {
+	position: fixed;
+	width: 800px;
+	left: 50%;
+	margin-left: -400px;
+	top: 50%;
+	background: white;
+	z-index: 9999;
+}
+
+.uploadtitle {
+	height: 50px;
+	line-height: 50px;
+	text-indent: 20px;
+	text-align: left;
+}
+
+.uploadcontent {
+	text-align: center;
+	background: #f3f3f3;
+	overflow: auto;
+	padding-top: 20px;
+}
+
+.filepart {
+	width: 750px;
+	margin: auto;
+	margin-bottom: 20px;
+	background: white;
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+}
+
+.filepart i {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	width: 20px;
+	height: 20px;
+}
+
+.filepart a {
+	float: right;
+	margin-right: 20px;
+	color: #39adff;
+	cursor: pointer;
+}
+
+.filename {
+	float: left;
+	width: 350px;
+	position: relative;
+	text-indent: 47px;
+}
+
+.fileuploadprocess {
+	width: 300px;
+	float: left;
+	height: 20px;
+	border: 1px solid #39adff;
+	margin-top: 8px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.fileuploadprocess div {
+	width: 0%;
+	height: 100%;
+	background: #39adff;
+}
+
+.videoico {
+	background: url('../image/videoico.png') center no-repeat;
+}

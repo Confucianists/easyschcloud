@@ -1,0 +1,357 @@
+@CHARSET "UTF-8";
+
+.menu {
+	width: 180px;
+	height: 100%;
+	background-color: white;
+	border: 1px solid #cfd3d5;
+}
+
+.rightconent {
+	background: #f3f3f3;
+	position: relative;
+	height: 100%;
+	/**	margin-left: 20px; **/
+}
+
+.subdiv {
+	position: relative;
+}
+
+.subdiv a {
+	padding: 17px 198px;
+	color: white;
+	font-size: 16px;
+	/* border-bottom: 1px solid #40444b; */
+	position: relative;
+	line-height: 60px;
+}
+
+.subdiv a i {
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	top: 16px;
+	left: 20px;
+}
+
+.subdiv a span {
+	position: absolute;
+	left: 20px;
+	top: 0;
+}
+
+.act {
+	background: #39adff !important;
+}
+
+.act a {
+	color: white;
+}
+
+.sel {
+	position: absolute;
+	width: 8px;
+	top: 5px;
+	bottom: 5px;
+	background: #39adff;
+}
+
+.btna {
+	padding: 5px 15px;
+	line-height: 40px;
+	border: 1px solid #39adff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.bluebtn {
+	background-color: #39adff;
+	color: white;
+}
+
+.whitebtn {
+	background-color: white;
+	color: #39adff;
+}
+
+.hltablecontent {
+	color: #555555;
+	background-color: white;
+}
+
+.hltablecontent table {
+	width: 100%;
+}
+
+.hltablecontent table td {
+	text-align: left;
+	padding: 15px 0;
+}
+
+.hltablecontent table  th {
+	text-align: left;
+	padding: 16px 0;
+}
+
+.hltablecontent table tr td:FIRST-CHILD, th:FIRST-CHILD {
+	padding-left: 15px !important;
+}
+
+.hltablecontent table th {
+	background-color: #ebebeb;
+	font-weight: normal;
+}
+
+.hltablecontent table tr {
+	text-align: left;
+}
+
+.hltablecontent table tr:nth-child(odd) {
+	text-align: left;
+	background-color: #e9f3ff;
+}
+
+.hltablefoot {
+	/**	padding: 10px 15px; **/
+	text-align: left;
+}
+
+.hlsort {
+	width: 50px;
+}
+
+.actiona {
+	padding: 5px 15px;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+}
+
+.deletea {
+	background: #f05050;
+}
+
+.sharea {
+	background: #6c6fbf;
+}
+
+.hlinput {
+	height: 25px;
+	width: 120px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border: 1px solid #cfd3d5;
+}
+
+.timeerror {
+	border-color: #E40;
+}
+
+.fileload {
+	position: absolute;
+	width: 0px;
+	z-index: 2000000000;
+	left: 50%;
+	top: 40%;
+}
+
+.loadtext {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+}
+
+/*********弹出框*******************/
+.hlframe {
+	position: fixed;
+	width: 600px;
+	left: 50%;
+	margin-left: -300px;
+	box-shadow: 1px 4px 32px 8px #333;
+	display: none;
+	top: 50%;
+	background: white;
+	z-index: 9999;
+}
+
+.backcover {
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.8;
+	z-index: 999;
+	display: none;
+}
+
+.hlframetitle {
+	line-height: 50px;
+	height: 50px;
+	padding-left: 30px;
+	font-size: 16px;
+	background: #5a89dc;
+	color: white;
+	text-align: left;
+}
+
+.hlframecontent {
+	padding: 10px;
+	overflow: auto;
+}
+
+.hlframeaction {
+	border-top: 1px solid #cad3df;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+
+.hlformrow {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+}
+
+.formlabel {
+	float: left;
+	padding-right: 20px;
+	text-align: right;
+	width: 150px;
+	line-height: 50px;
+}
+
+.frominput {
+	float: left;
+}
+
+.frominput input, .frominput select, .frominput textarea {
+	width: 200px;
+	border: 1px solid #cad3df;
+	border-radius: 5px;
+}
+
+.frominput img {
+	width: 200px;
+}
+
+.frominput textarea {
+	margin-top: 10px;
+	height: 100px;
+}
+
+.actionbtn {
+	padding: 5px 15px;
+	margin-left: 5px;
+	color: white;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.redbtn {
+	background: #a4a2a2;
+}
+
+.hlframeaction .actionbtn {
+	padding: 10px 30px !important;
+}
+
+.btfont {
+	color: red;
+	margin-right: 10px;
+}
+
+.errortip {
+	float: left;
+	margin-left: 20px;
+	color: red;
+	display: none;
+}
+
+.confirmdiv {
+	position: fixed;
+	width: 600px;
+	top: 20%;
+	left: 50%;
+	margin-left: -300px;
+	background-color: white;
+	box-shadow: 0 5px 10px #333;
+	display: none;
+	z-index: 9999;
+}
+
+.confirmtitle {
+	background: #39adff;
+	color: white;
+	font-size: 16px;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 30px;
+}
+
+.confirmcontent {
+	text-align: center;
+	padding: 35px 20px;
+	font-size: 16px;
+}
+
+.confirmaction {
+	border-top: 1px solid #ddd;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	padding-right: 10px;
+}
+
+.tipdiv {
+	position: fixed;
+	width: 600px;
+	top: 20%;
+	left: 50%;
+	margin-left: -300px;
+	background-color: white;
+	box-shadow: 0 5px 10px #333;
+	display: none;
+	z-index: 9999;
+}
+
+.tiptitle {
+	background: #39adff;
+	color: white;
+	font-size: 16px;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 30px;
+}
+
+.tipcontent {
+	text-align: center;
+	padding: 35px 20px;
+	font-size: 16px;
+}
+
+.tipaction {
+	border-top: 1px solid #ddd;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	padding-right: 10px;
+}
+
+.tipaction .actionbtn {
+	padding: 10px 30px !important;
+}
+
+.nodata { 
+	position: absolute;
+	background: url(../image/nodata.png) center no-repeat;
+	width: 200px;
+	height: 200px;
+	top: 50%;
+	margin-top: -100px;
+	left: 50%;
+	margin-left: -100px;
+} 
+/****************************/

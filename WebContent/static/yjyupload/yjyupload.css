@@ -1,0 +1,225 @@
+.uploadbtn {
+	padding: 5px 15px 3px 15px;
+	color: white;
+	position: absolute;
+	margin-top: -15px;
+	top: 50%;
+	text-decoration: none;
+	border-radius: 5px
+}
+.uploadbtn:HOVER{
+	text-decoration: none;
+}
+.uploadbtn:FOCUS{
+	text-decoration: none;
+}
+.titlediv {
+	height: 100%;
+	margin-left: 13px;
+	position: relative;
+	width: 100%;
+}
+
+.contentdiv {
+	width: 100%;
+	border-top: 1px solid #e7e7eb;
+	text-align: center;
+	overflow: hidden;
+}
+
+.contentul {
+	border: 1px solid #e7e7eb;
+	text-align: center;
+	overflow: hidden;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.contentli {
+	float: left;
+	margin: 10px;
+}
+
+.tipdiv {
+	color: #8d8d8d;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 15px;
+	width: 95%;
+	overflow: hidden;
+}
+
+.isupload {
+	border: 1px solid #e7e7eb;
+	height: 50px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50px;
+}
+
+.cover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	opacity: 1;
+	top: 0;
+	z-index: 99;
+	color: white;
+}
+
+.allcover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	opacity: 0.8;
+	z-index: 99;
+	color: white;
+	display: none;
+}
+
+.allimg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	text-align: center;
+	display: none;
+}
+
+.uploaddiv {
+	border: 1px solid #e7e7eb;
+	width: 100%;
+	height: auto
+}
+
+.tooldiv {
+	background-color: #f4f5f9;
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #e7e7eb;
+}
+
+.okdiv {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	right: 0;
+	bottom: 0;
+	background: url('img/ok.png');
+	pointer-events:none;
+}
+
+.leftdiv {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 40%;
+	
+	cursor: pointer;
+}
+.leftdiv:HOVER
+{
+	background: url("img/left.png") no-repeat center left 20px;
+}
+.rightdiv {
+	height: 100%;
+	right: 0;
+	position: absolute;
+	top: 0;
+	width: 40%;
+	
+	cursor: pointer;
+}
+.rightdiv:HOVER
+{
+	background: url("img/right.png") no-repeat center right 20px;
+}
+
+#showimgdiv {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	display: none;
+}
+
+.upimglist {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.divs {
+	border: 1px solid #e7e7eb;
+	float: left;
+	width: 150px;
+	height: 180px;
+}
+
+.placeHolder {
+	background-color: white;
+	border: dashed 1px gray;
+	float: left;
+}
+
+.imgtool {
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid #e7e7eb;
+	background-color: #f4f5f9;
+}
+
+.imgtool ul {
+	list-style-type: none;
+	width: 100%;
+	height: 30px;
+	padding: 0;
+}
+
+.imgtool ul li {
+	float: left;
+	height: 30px;
+	width: 32%;
+}
+
+.selectdiv {
+	cursor:pointer;
+	width: 33%;
+	height: 30px;
+	float: left;
+	background: url('img/check1.png') no-repeat center;
+}
+.viewdiv
+{
+	cursor:pointer;
+	width: 33%;
+	height: 30px;
+	float: left; 
+	background: url('img/view1.png') no-repeat center
+}
+.viewdiv:HOVER
+{
+	background: url('img/view2.png') no-repeat center
+}
+.deletediv{
+	cursor:pointer;
+	width: 33%;
+	height: 30px;
+	float: left;
+	background: url('img/delete1.png') no-repeat center
+}
+.deletediv:HOVER {
+	background: url('img/delete2.png') no-repeat center
+}
+.movediv{
+	position: relative;
+	cursor: pointer;
+}

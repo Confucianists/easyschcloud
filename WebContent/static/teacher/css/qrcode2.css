@@ -1,0 +1,34 @@
+.impowerBox .qrcode {
+	width: 135px;
+	margin-top: 5px !important;
+}
+
+.impowerBox .title {
+	display: none;
+}
+
+.impowerBox .info {
+	width: 200px;
+}
+
+.status_icon {display：none
+	
+}
+
+.impowerBox .status {
+	text-align: center;
+}
+
+.impowerBox .icon38_msg {
+	display: none !important;
+}
+
+h4 {
+	color: white;
+}
+body{
+	margin: 0 !important;
+}
+.impowerBox .status p {
+	color: white;
+}

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:cache="http://www.springframework.org/schema/cache"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa-1.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		 http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache-3.2.xsd "
+	default-lazy-init="true">
+
+	<description>Spring公共配置 </description>
+
+
+	<context:property-placeholder location="classpath*:/application.properties" />
+
+
+
+
+
+
+	<!-- 使用annotation 自动注册bean, 并保证@Required、@Autowired的属性被注入 -->
+	<context:component-scan base-package="com.ymy">
+		<context:exclude-filter type="annotation"
+			expression="org.springframework.stereotype.Controller" />
+		<context:exclude-filter type="annotation"
+			expression="org.springframework.web.bind.annotation.ControllerAdvice" />
+	</context:component-scan>
+
+	<!-- Jpa Entity Manager 配置 -->
+	<bean id="entityManagerFactory"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="jpaVendorAdapter" ref="hibernateJpaVendorAdapter" />
+		<property name="packagesToScan" value="com.ymy" />
+		<property name="jpaProperties">
+			<props>
+				<!-- 命名规则 My_NAME->MyName -->
+				<prop key="hibernate.ejb.naming_strategy">org.hibernate.cfg.ImprovedNamingStrategy</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">false</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory
+				</prop>
+				<prop key="javax.persistence.sharedCache.mode">ENABLE_SELECTIVE</prop>
+				<!-- <prop key="javax.persistence.sharedCache.mode"></prop> -->
+				<!-- 开启二级缓存 -->
+				<prop key="cache.use_second_level_cache">true</prop>
+				<!-- 开启查询缓存 -->
+				<prop key="hibernate.cache.use_query_cache">true</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="hibernateJpaVendorAdapter"
+		class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+		<property name="databasePlatform">
+			<bean factory-method="getDialect"
+				class="org.springside.modules.persistence.Hibernates">
+				<constructor-arg ref="dataSource" />
+			</bean>
+		</property>
+	</bean>
+
+	<!-- Spring Data Jpa配置 -->
+	<jpa:repositories base-package="com.ymy"
+		transaction-manager-ref="transactionManager"
+		entity-manager-factory-ref="entityManagerFactory" />
+
+	<!-- Jpa 事务配置 -->
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>
+
+	<!-- 使用annotation定义事务 -->
+	<tx:annotation-driven transaction-manager="transactionManager"
+		proxy-target-class="true" />
+
+	<!-- JSR303 Validator定义 -->
+	<bean id="validator"
+		class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
+
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+		<property name="driverClass" value="com.mysql.jdbc.Driver" />
+		<property name="jdbcUrl" value="${jdbc.url}" />
+		<property name="user" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="maxPoolSize" value="${jdbc.pool.maxPoolSize}" />
+		<property name="initialPoolSize" value="${jdbc.pool.initialPoolSize}" />
+		<property name="maxIdleTime" value="25000" />
+		<property name="acquireIncrement" value="1" />
+		<property name="acquireRetryAttempts" value="30" />
+		<property name="acquireRetryDelay" value="1000" />
+		<property name="testConnectionOnCheckin" value="true" />
+		<property name="automaticTestTable" value="cptest" />
+		<property name="idleConnectionTestPeriod" value="18000" />
+	</bean>
+
+
+
+
+	<bean id="multipartResolver" class="com.ymy.web.process.CommonsMultipartResolverExt">
+		<property name="defaultEncoding" value="UTF-8" />
+		<property name="maxUploadSize" value="1000000000000" />
+	</bean> 
+
+
+
+	<!-- jedis pool配置 -->
+
+	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+		<property name="maxActive" value="${redis.maxActive}" />
+		<property name="maxIdle" value="${redis.maxIdle}" />
+		<property name="maxWait" value="${redis.maxWait}" />
+		<property name="testOnBorrow" value="true" />
+	</bean>
+
+	<!-- spring data redis -->
+	<bean id="jedisConnectionFactory"
+		class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
+		<property name="hostName" value="${redis.host}" />
+		<property name="port" value="${redis.port}" />
+		<property name="password" value="${redis.pass}" />
+		<property name="poolConfig" ref="jedisPoolConfig" />
+	</bean>
+
+	<bean id="redisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">
+		<property name="connectionFactory" ref="jedisConnectionFactory" />
+		<property name="keySerializer">
+			<bean
+				class="org.springframework.data.redis.serializer.StringRedisSerializer"></bean>
+		</property>
+		<property name="valueSerializer">
+			<bean
+				class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"></bean>
+		</property>
+		<property name="hashKeySerializer">
+			<bean
+				class="org.springframework.data.redis.serializer.StringRedisSerializer"></bean>
+		</property>
+		<property name="hashValueSerializer">
+			<bean
+				class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"></bean>
+		</property>
+	</bean>
+	
+	
+	
+
+
+
+
+
+
+
+	<!-- 启用shrio授权注解拦截方式 -->  
+        <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">  
+        <!-- 装配 securityManager -->  
+        <property name="securityManager" ref="securityManager"/>  
+        <!-- 配置登陆页面 -->  
+        <property name="loginUrl" value="/index.jsp"/>  
+        <!-- 登陆成功后的一面 -->  
+        <property name="successUrl" value="/jsp/success.jsp"/>  
+        <property name="unauthorizedUrl" value="/shiro/failed.jsp"/>  
+        <!-- 具体配置需要拦截哪些 URL, 以及访问对应的 URL 时使用 Shiro 的什么 Filter 进行拦截.  -->  
+        <property name="filterChainDefinitions">  
+        <value>  
+              /index.jsp=anon  
+              /jsp/success.jsp=anon  
+              /jsp/fail.jsp=anon  
+              /jsp/user.jsp = roles[user]  
+              /jsp/admin.jsp = roles[admin]  
+              /logout = logout  
+        </value>  
+        </property>  
+        </bean>  
+  
+        <!-- 配置缓存管理器 -->  
+       <!--  <bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">  --> 
+        <!-- 指定 ehcache 的配置文件 -->   
+             <!-- <property name="cacheManagerConfigFile" value="classpath:ehcache-shiro.xml"/>   
+        </bean>   -->
+        <!-- 配置进行授权和认证的 Realm -->  
+        <bean id="myRealm" class="com.ymy.shiro.ShiroDbRealm">  
+             <property name="userService" ref="userService" />  
+         </bean>  
+        <bean id="userService" class="com.ymy.service.impl.UserServiceImpl" />  
+        <!-- 配置 Shiro 的 SecurityManager Bean. -->  
+        <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">  
+            <!-- <property name="cacheManager" ref="cacheManager"/>   --> 
+             <property name="realm" ref="myRealm"/>   
+             <property name="sessionMode" value="native">  
+             </property>  
+       </bean>  
+       <!-- 配置 Bean 后置处理器: 会自动的调用和 Spring 整合后各个组件的生命周期方法. -->  
+        <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>  
+
+
+
+</beans>

@@ -1,0 +1,128 @@
+@CHARSET "UTF-8";
+
+.cwbody {
+	margin: auto;
+	width: 1000px;
+	position: relative;
+	border: 1px solid #cfd3d5;
+	background: white;
+	overflow: hidden;
+	height: 500px;
+}
+
+.infoleft {
+	float: left;
+	width: 249px;
+	border-right: 1px solid #cfd3d5;
+	height: 100%;
+}
+
+.inforight {
+	width: 750px;
+	text-align: center;
+	padding-top: 40px;
+	margin: auto;
+}
+
+.formdiv {
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.row {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	width: 100%;
+}
+
+.formlabel {
+	float: left;
+	padding-right: 20px;
+	text-align: right;
+	width: 150px;
+	line-height: 50px;
+}
+
+.btfont {
+	color: red;
+	margin-right: 10px;
+}
+
+.frominput {
+	float: left;
+}
+
+.frominput input {
+	width: 300px;
+	border: 1px solid #cfd3d5;
+	outline: none;
+	text-indent: 1em;
+}
+
+.hlinput {
+	height: 25px;
+}
+
+.btntip {
+	float: left;
+	margin-left: 20px;
+}
+
+.errortip {
+	float: left;
+	margin-left: 20px;
+	color: red;
+	display: none;
+}
+
+.enablebtn {
+	background: #f3f3f3 !important;
+	border: none;
+	color: #39adff;
+	cursor: not-allowed;
+}
+
+.actionrow {
+	margin-top: 30px;
+	padding-left: 180px;
+	text-align: left;
+}
+
+.tipdiv1 {
+	position: fixed;
+	width: 600px;
+	top: 20%;
+	left: 50%;
+	margin-left: -300px;
+	background-color: white;
+	box-shadow: 0 5px 10px #333;
+	display: none;
+	z-index: 9999;
+}
+
+.tipcontent1 {
+	text-align: center;
+	padding: 35px 20px;
+	font-size: 16px;
+}
+
+.sexa {
+	position: relative;
+	padding: 10px 38px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.sexi {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-image: url(../image/radio.png);
+	left: 0;
+	top: 10px;
+}
+
+.sexis i {
+	background-image: url(../image/selectradio.png) !important;
+}

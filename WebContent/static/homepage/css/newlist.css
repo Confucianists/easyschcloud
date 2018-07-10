@@ -1,0 +1,35 @@
+.newpart {
+	border-bottom: 1px solid #c0bfbd;
+	padding-bottom: 50px;
+	padding-top: 30px;
+}
+
+.newimg {
+	width: 200px;
+	height: 150px;
+	float: left;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.newnote {
+	margin-left: 250px;
+}
+
+.newtitle {
+	font-size: 23px;
+	cursor: pointer;
+}
+
+.newtime {
+	font-size: 10px;
+	color: #939393;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.newcontent {
+	font-size: 15px;
+	line-height: 25px;
+	cursor: pointer;
+}

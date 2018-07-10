@@ -1,0 +1,306 @@
+/**
+ģ��ҳ��ʽ
+**/
+@CHARSET "UTF-8";
+
+.head {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+}
+
+.foot {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+}
+
+.content {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	right: 0;
+	bottom: 0px;
+	background-color: #f3f3f3;
+}
+
+.menutree {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 200px;
+	overflow: auto;
+	background-color: #4d4c4c;
+}
+
+.contentbody {
+	position: absolute;
+	left: 230px;
+	right: 30px;
+	top: 0;
+	bottom: 0;
+	overflow: auto;
+}
+
+.confirmdiv {
+	position: fixed;
+	width: 600px;
+	top: 20%;
+	left: 50%;
+	border: 1px solid;
+	margin-left: -300px;
+	background-color: white;
+	box-shadow: 0 5px 10px #333;
+	display: none;
+	z-index: 9999;
+}
+
+.confirmtitle {
+	background: #5a89dc none repeat scroll 0 0;
+	color: white;
+	font-size: 16px;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 30px;
+}
+
+.confirmcontent {
+	text-align: center;
+	padding: 35px 20px;
+	font-size: 16px;
+}
+
+.confirmaction {
+	border-top: 1px solid #ddd;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	padding-right: 10px;
+}
+
+.tipdiv {
+	position: fixed;
+	width: 600px;
+	top: 20%;
+	left: 50%;
+	border: 1px solid;
+	margin-left: -300px;
+	background-color: white;
+	box-shadow: 0 5px 10px #333;
+	display: none;
+	z-index: 9999;
+}
+
+.tiptitle {
+	background: #5a89dc;
+	color: white;
+	font-size: 16px;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 30px;
+}
+
+.tipcontent {
+	text-align: center;
+	padding: 35px 20px;
+	font-size: 16px;
+}
+
+.tipaction {
+	border-top: 1px solid #ddd;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	padding-right: 10px;
+}
+
+.tipaction .actionbtn {
+	padding: 10px 30px !important;
+}
+
+.headlogo {
+	background-color: #3e82da;
+	float: left;
+	width: 200px;
+	height: 100%;
+}
+
+.headlogo img {
+	margin-top: 9px;
+	width: 138px;
+	margin-left: 20px;
+}
+
+.headtitle {
+	height: 100%;
+	line-height: 60px;
+	font-size: 25px;
+	color: #555555;
+	padding-left: 30px;
+	float: left;
+}
+
+.statediv {
+	height: 100%;
+	float: right;
+	line-height: 60px;
+	padding-right: 30px;
+	font-size: 14px;
+}
+
+.realname {
+	color: #555555;
+	margin-right: 30px;
+}
+
+.logoutbtn {
+	color: #39ADFF;
+	cursor: pointer;
+	text-decoration: none;
+	position: relative;
+	float: right;
+	margin-right: 20px;
+}
+.editpwdbtn{
+	color: #39ADFF;
+	cursor: pointer;
+	text-decoration: none;
+	position: relative;
+	float: right;
+	margin-right: 20px;
+}
+.editpwdbtn:HOVER{
+	color:#3e6fc7;
+}
+.logoutbtn:ACTIVE {
+	text-decoration: none;
+}
+
+.logouti {
+	left: 10px;
+	margin-top: -7px;
+	position: absolute;
+	top: 50%;
+	width: 20px;
+}
+
+.logoutbtn:HOVER {
+	color:#3e6fc7;
+}
+
+.act a span {
+	background: url('../../images/arrow.png');
+	width: 10px;
+	height: 18px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -9px;
+}
+
+.biggerarrow {
+	background: url('../../images/bigger.png');
+	width: 8px;
+	height: 12px;
+	margin-top: -6px;
+	top: 50%;
+}
+
+.confirmaction .actionbtn {
+	padding: 10px 30px !important;
+}
+
+/*以下为修改密码弹出框*/
+.formdiv{
+	width:400px;
+	position: fixed;
+	left: 50%;
+	margin-left: -200px;
+	box-shadow: 1px 4px 32px 8px #333;
+	display: none;
+	top: 50%;
+	background: white;
+	z-index: 9999;
+	display: none;
+}
+.formtitle{
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 20px;
+	width: 100%;
+	float: left;
+	background-color: #5A89DC;	
+	color: white;
+}
+.formcontent{
+	max-height: 400px;
+	height: auto;
+	width: 100%;
+	float: left;
+	padding: 10px;
+}
+.formfoot{
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	float: left;
+	border-top: 1px solid #cad3df;	
+}
+.formrow{
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	/*width: 100%；*/
+	/*margin-top:10px;*/
+}
+.rowlabel{
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	text-indent: 20px;
+	width: 100px;
+}
+.rowinput{
+	height: 40px;
+	float: left;
+	font-size: 16px;
+	width: 300px;
+}
+.rowinput input{
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	width: 250px;
+	border-radius: 3px;
+}
+.rowinput textarea{
+	height: 50px;
+	line-height: 25px;
+	font-size: 16px;
+	width: 250px;
+	border-radius: 3px;
+	
+}
+/*以上为修改密码弹出框*/
+.errortip1{
+	float: left;
+	margin-left: 20px;
+	color: red;
+	display: none;
+	height: 40px;
+	line-height:40px;
+}
+#savepwd{
+	margin-left: 145px;
+
+}
+#cancelpwd{
+	
+}

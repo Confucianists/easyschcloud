@@ -1,0 +1,43 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>真会云课堂</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+<div id="top"></div>
+	<div class="part"
+		style="background: url('image/softback.png') repeat-x;">
+		<img class="pimg1" alt="" src="image/soft0.png">
+	</div>
+	<div class="part">
+		<img class="pimg1" alt="" src="image/soft1.png">
+	</div>
+	<div class="part" style="background: #dfdfdd">
+		<img class="pimg1" alt="" src="image/soft2.png">
+	</div>
+	<div class="part">
+		<img class="pimg1" alt="" src="image/soft3.png">
+	</div>
+	<div class="part" style="background: #dfdfdd">
+		<img class="pimg1" alt="" src="image/soft4.png">
+	</div>
+	<div class="part">
+		<img class="pimg1" alt="" src="image/soft5.png">
+	</div>
+	 <div id="foot"></div>
+	  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+	$.get("top.html", function(data) {
+		$("#top").html(data);
+	});
+
+	$.get("foot.html", function(data) {
+		$("#foot").html(data);
+	});
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,1132 @@
+@CHARSET "UTF-8";
+
+.cwbody {
+	height: 100%;
+	margin: auto;
+	width: 1000px;
+	position: relative;
+}
+
+.filebar {
+	height: 60px;
+	border: 1px solid #cfd3d5;
+	text-align: left;
+	background: white;
+	width: 100%;
+}
+
+.filecount {
+	font-size: 25px;
+	color: #39adff;
+}
+
+.fileprocess {
+	height: 25px;
+	padding-left: 15px;
+	font-size: 16px;
+	border-left: 5px solid #39adff;
+	line-height: 25px;
+	margin-top: 16px;
+}
+
+.fileprocess:nth-child(2) {
+	padding-left: 40px !important;
+}
+
+.btndiv {
+	flex: 1;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	height: 100%;
+}
+
+.searchdiv {
+	width: 400px;
+	height: 100%;
+}
+
+}
+.left {
+	float: left;
+	width: 250px;
+}
+
+.right {
+	width: 679px;
+	float: left;
+}
+
+.processall {
+	width: 100%;
+	background: #d7dbdf;
+	height: 15px;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.processuse {
+	height: 100%;
+	width: 60%;
+	background: #92ef55;
+	border-radius: 10px;
+}
+
+.fbottom {
+	margin-top: 10px;
+}
+
+.btndiv .btna {
+	margin-left: 10px;
+}
+
+.btndiv div {
+	margin-top: 10px;
+}
+
+.searchborder {
+	background: #f3f3f3;
+	width: 300px;
+	border-radius: 20px;
+	height: 40px;
+	margin-top: 10px;
+	overflow: hidden;
+	position: relative;
+	float: right;
+	margin-right: 10px;
+}
+
+.searchborder i {
+	background: url('../image/search.png') center;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	left: 10px;
+	top: 8px;
+}
+
+.searchborder input {
+	border: medium none;
+	box-shadow: inset 0 0 0 1000px #f3f3f3;
+	height: 40px;
+	margin-left: 45px;
+	outline: none;
+	width: 185px;
+}
+
+.searchborder a {
+	padding: 10px 20px;
+	background: #39adff;
+	color: white;
+	float: right;
+	cursor: pointer;
+}
+
+.files {
+	
+}
+
+.righttable {
+	position: absolute;
+	left: 0;
+	border: 1px solid #cfd3d5;
+	top: 75px;
+	bottom: 50px;
+	right: 0;
+	background: white;
+}
+
+.leftmenu {
+	border: 1px solid #cfd3d5;
+	width: 200px;
+	position: absolute;
+	top: 80px;
+	left: 0;
+	background: white;
+}
+
+.sources {
+	width: 781px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 220px;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.leftmenu div {
+	
+}
+
+#nodes {
+	overflow-y: auto;
+}
+
+#nodes div {
+	width: 100%;
+	padding: 10px 0px;
+	text-align: left;
+	text-indent: 15px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.subjectdiv {
+	border-bottom: 1px solid #cfd3d5;
+	padding: 15px 0px !important;
+	position: relative;
+	text-align: left;
+	text-indent: 15px;
+	cursor: pointer;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.subjectdiv i {
+	background: url('../image/addlessonleft.png') center no-repeat;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 15px;
+	top: 14px;
+}
+
+.showtypediv {
+	padding: 15px 0px !important;
+	position: relative;
+	text-align: left;
+	text-indent: 15px;
+	cursor: pointer;
+}
+
+.showtypediv i {
+	background: url('../image/addlessondown.png') center no-repeat;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 15px;
+	top: 14px;
+}
+
+.choiseshowtype {
+	width: 200px;
+	position: fixed;
+	box-shadow: -2px 2px 12px #888888;
+	display: none;
+	z-index: 9999;
+	background: white;
+	border-radius: 4px;
+	padding: 7px 0px;
+}
+
+.choiseshowtype div {
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+	text-indent: 2em;
+	cursor: pointer;
+}
+
+.actshowtype {
+	background: #dddddd;
+}
+
+.whitecoer {
+	
+}
+
+.unitdiv {
+	background: #f1f1f1;
+	margin-top: 5px;
+}
+
+.unitdiv:FIRST-CHILD {
+	margin-top: 0 !important;
+}
+
+.actlesson {
+	background: #39adff;
+	color: white;
+}
+
+.typea {
+	float: left;
+	margin-left: 5px;
+	border: 1px solid #cfd3d5;
+	width: 45px;
+	line-height: 30px;
+	border-radius: 16px;
+	cursor: pointer;
+}
+
+.selecttype {
+	background-color: #39adff !important;
+	color: white !important;
+}
+
+.typetitle {
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+	font-size: 15px;
+	border-bottom: 5px solid #39adff;
+	background: white;
+}
+
+.types {
+	
+}
+
+.typetab {
+	float: left;
+	width: 100px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.acttypetab {
+	background: #39adff;
+	color: white;
+}
+
+.sourcelist {
+	
+}
+
+.sourcepart {
+	width: 148px;
+	float: left;
+	margin-left: 10px;
+	background: white;
+	margin-top: 10px;
+	border-radius: 10px;
+	text-align: left;
+	padding-bottom: 15px;
+	position: relative;
+	overflow: hidden;
+}
+
+.sourcepart:HOVER {
+	transform: translate3d(0, -2px, 0);
+	box-shadow: 0px 0px 13px 0px #aeabab;
+}
+
+.fileimg {
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100px;
+	position: relative;
+	cursor: pointer;
+}
+
+.filetitle {
+	margin-top: 10px;
+	text-indent: 37px;
+	position: relative;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+	height: 20px;
+	line-height: 20px;
+}
+
+.fileico {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 12px;
+	top: 2px;
+}
+
+.imgico {
+	background: url('../image/imgico.png') center no-repeat;
+}
+
+.videoico {
+	background: url('../image/videoico.png') center no-repeat;
+}
+
+.excelico {
+	background: url('../image/excelico.png') center no-repeat;
+}
+
+.swfico {
+	background: url('../image/flashico.png') center no-repeat;
+}
+
+.pdfico {
+	background: url('../image/pdfico.png') center no-repeat;
+}
+
+.pptico {
+	background: url('../image/pptico.png') center no-repeat;
+}
+
+.voiceico {
+	background: url('../image/voiceico.png') center no-repeat;
+}
+
+.wordico {
+	background: url('../image/wordico.png') center no-repeat;
+}
+
+.otherico {
+	background: url('../image/otherico.png') center no-repeat;
+}
+
+.zipico {
+	background: url('../image/zipico.png') center no-repeat;
+}
+
+.bjico {
+	background: url('../image/bjico.png') center no-repeat;
+}
+
+.fileinfo {
+	margin-top: 10px;
+	text-indent: 1em;
+	position: relative;
+	font-size: 12px;
+}
+
+.fileselect {
+	background: url(../image/fileselect.png) center no-repeat;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	top: -4px;
+}
+
+.fileselect:HOVER {
+	background: url(../image/fileselectmove.png) center no-repeat;
+}
+
+.fileselected {
+	background: url(../image/fileselected.png) center no-repeat !important;
+}
+
+.filedelete {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: url(../image/filedelete.png) center no-repeat;
+	right: 5px;
+	top: 5px;
+	cursor: pointer;
+	display: none;
+}
+
+/*** 浮动操作框  ****/
+.floataction {
+	position: fixed;
+	left: 50%;
+	bottom: 20px;
+	width: 50px;
+	margin-left: 510px;
+}
+
+.actiontip {
+	background: #333;
+	height: 50px;
+	margin-top: 10px;
+	opacity: 0.8;
+	border-radius: 4px;
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+}
+
+.actiontip:HOVER {
+	background: #39adff;
+}
+
+.movediv {
+	height: 100%;
+	color: white;
+	line-height: 50px;
+	text-align: left;
+	width: 65px;
+	float: left;
+}
+
+.uploadtip .floatlogo {
+	background: url('../image/lessupload.png') center no-repeat;
+}
+
+.floatlogo {
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+
+.savetip .floatlogo {
+	background: url('../image/lesssave.png') center no-repeat;
+}
+
+/***弹出框***/
+.showframe {
+	z-index: 99999;
+	position: fixed;
+	left: 50%;
+	width: 800px;
+	top: 50%;
+	margin-left: -400px;
+	margin-top: -260px;
+	background: white;
+}
+
+.backcoer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #333;
+	z-index: 9999;
+	opacity: 0.8;
+}
+
+.titlename {
+	float: left;
+	text-indent: 2em;
+}
+
+.frametitle {
+	width: 100%;
+	height: 50px;
+	background: #39adff;
+	line-height: 50px;
+	color: white;
+}
+
+.framemenu {
+	float: right;
+	margin-right: 40px;
+	cursor: pointer;
+	position: relative;
+}
+
+.framcontent {
+	height: 400px;
+	background: #f3f3f3;
+	overflow: auto;
+}
+
+.framaction {
+	height: 70px;
+	text-align: center;
+	line-height: 70px;
+}
+
+.actions {
+	margin: auto;
+	display: inline;
+}
+
+.actions a {
+	padding: 10px 50px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.actions .queren {
+	background: #39adff;
+	color: white;
+}
+
+.actions .quxiao {
+	background: #f3f3f3;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.selectmunu {
+	background: white;
+	position: absolute;
+	top: 40px;
+	right: 20px;
+	width: 120px;
+	border-radius: 5px;
+	padding: 10px 0px;
+	box-shadow: -2px 2px 12px #888888;
+	z-index: 99;
+}
+
+.optionmenu {
+	color: black;
+	text-align: left;
+	text-indent: 10px;
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.actoptionmenu {
+	background: #39adff !important;
+	color: white !important;
+}
+
+.framedownico {
+	background: url(../image/lessdown.png) center no-repeat;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	right: -16px;
+	top: 20px;
+}
+
+.tbdiv {
+	background: white;
+	float: left;
+	width: 355px;
+	height: 55px;
+	margin-top: 10px;
+	margin-left: 30px;
+	border-radius: 30px;
+	position: relative;
+	text-align: left;
+	line-height: 55px;
+	text-indent: 60px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.tbdiv:nth-child(1) {
+	margin-top: 20px !important;
+}
+
+.tbdiv:nth-child(2) {
+	margin-top: 20px !important;
+}
+
+.tbdiv i {
+	width: 40px;
+	height: 40px;
+	background: url(../image/textbook.png) center no-repeat;
+	position: absolute;
+	left: 8px;
+	top: 7px;
+}
+
+.selecttbdiv i {
+	background: url(../image/textbooks.png) center no-repeat !important;
+}
+
+.snum {
+	position: absolute;
+	background: red;
+	top: 65px;
+	color: white;
+	right: -10px;
+	/* padding: 5px; */
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	z-index: 9999;
+}
+
+.submitdiv {
+	z-index: 99999;
+	position: fixed;
+	left: 50%;
+	width: 800px;
+	top: 50%;
+	margin-left: -400px;
+	margin-top: -300px;
+	background: white;
+}
+
+.submittitle {
+	height: 60px;
+	line-height: 60px;
+	text-align: left;
+	text-indent: 20px;
+}
+
+.submittitle input {
+	width: 668px;
+	border: 1px solid #cfd3d5;
+	outline: none;
+	text-indent: 1em;
+	border-radius: 5px;
+	height: 25px;
+	margin-left: 20px;
+}
+
+.submitcontent {
+	background: #f3f3f3;
+	text-align: center;
+	line-height: 40px;
+	text-indent: 20px;
+	max-height: 500px;
+	min-height: 300px;
+	overflow: auto;
+}
+
+.selectfiles {
+	overflow: auto;
+	width: 780px;
+	margin: auto;
+}
+
+.sfile {
+	width: 375px;
+	float: left;
+	box-shadow: -2px 1px 5px 0px #888888;
+	background: white;
+	margin-bottom: 10px;
+	position: relative;
+	text-indent: 35px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 10px;
+	text-align: left;
+}
+
+.typei {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 10px;
+	top: 16px;
+}
+
+.actfile .deletei {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background: url('../image/sfiledelete.png') center no-repeat;
+	cursor: pointer;
+}
+
+.suberror {
+	height: 30px;
+	line-height: 30px;
+	color: red;
+}
+
+.dobtns {
+	height: 60px;
+	line-height: 60px;
+}
+
+.dobtns a {
+	padding: 10px 50px;
+	border-radius: 5px;
+}
+
+.dosave {
+	background: #39adff;
+	color: white;
+}
+
+.docancel {
+	background: #f3f3f3;
+	margin-left: 20px;
+	color: black;
+}
+
+.placeHolder {
+	box-shadow: none !important;
+}
+
+.tipdiv1 {
+	position: fixed;
+	width: 600px;
+	top: 20%;
+	left: 50%;
+	margin-left: -300px;
+	background-color: white;
+	box-shadow: 0 5px 10px #333;
+	display: none;
+	z-index: 9999;
+}
+
+.tipcontent1 {
+	text-align: center;
+	padding: 35px 20px;
+	font-size: 16px;
+}
+
+.otherzya {
+	border: 1px solid #cfd3d5;
+	/* padding: 10px 1px; */
+	display: block;
+	width: 90%;
+	margin: auto;
+	margin-top: 10px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #dedede;
+	cursor: pointer;
+}
+
+.showname {
+	float: left;
+	max-width: 600px;
+	text-indent: 40px;
+	height: 50px;
+	position: relative;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.showname i {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 10px;
+	top: 13px;
+}
+
+.viewdiv {
+	position: fixed;
+	width: 800px;
+	z-index: 99999;
+	left: 50%;
+	margin-left: -400px;
+	top: 50%;
+	background: white;
+}
+
+.viewtitle {
+	width: 100%;
+	height: 50px;
+	text-align: left;
+	line-height: 50px;
+	position: relative;
+	border-bottom: 1px solid #cfd3d5;
+}
+
+.editeico {
+	background: url('../image/filerename.png') center no-repeat;
+	width: 40px;
+	height: 50px;
+	float: left;
+	cursor: pointer;
+}
+
+.sureediteico {
+	background: url('../image/surefilerename.png') center no-repeat;
+	width: 40px;
+	height: 50px;
+	float: left;
+	cursor: pointer;
+}
+
+.viewactions {
+	float: right;
+	width: 180px;
+	padding-right: 30px;
+}
+
+.viewactions a {
+	margin-left: 25px;
+	color: black;
+}
+
+.viewactions i {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 0;
+	top: 14px;
+}
+
+.viewactions div {
+	
+}
+
+.viewactionbar {
+	width: 60px;
+	float: right;
+	position: relative;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.actviewactionbar a {
+	color: #39adff;
+}
+
+.actviewactionbar .filedeleteico {
+	background: url(../image/filedeleteicos.png) center no-repeat;
+}
+
+.filedeleteico {
+	background: url(../image/filedeleteico.png) center no-repeat;
+}
+
+.filedownloadico {
+	background: url(../image/filedownloadico.png) center no-repeat;
+}
+
+.viewcontent {
+	overflow: auto;
+	position: relative;
+}
+
+.showname input {
+	border: 1px solid #cfd3d5;
+	outline: none;
+	border-radius: 5px;
+	height: 25px;
+	max-width: 558px;
+}
+
+.deletetip {
+	background: url(../image/deletetip.png) center no-repeat;
+	width: 160px !important;
+	height: 95px;
+	position: absolute !important;
+	left: -85px;
+	z-index: 999;
+	top: 30px;
+	font-size: 10px;
+	cursor: auto;
+}
+
+.deletetiptitle {
+	height: 30px;
+	line-height: 30px;
+	margin-left: 18px;
+	margin-top: 27px;
+}
+
+.deleteaction {
+	height: 30px;
+	line-height: 30px;
+	margin-left: 55px;
+}
+
+.deleteaction a {
+	color: #39adff;
+	cursor: pointer;
+}
+
+.closeview {
+	background: url('../image/closeview.png') center no-repeat;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: -15px;
+	top: -15px;
+	cursor: pointer;
+}
+
+.uploadprocess {
+	position: fixed;
+	width: 800px;
+	left: 50%;
+	margin-left: -400px;
+	top: 50%;
+	background: white;
+	z-index: 9999;
+}
+
+.uploadtitle {
+	height: 50px;
+	line-height: 50px;
+	text-indent: 20px;
+	text-align: left;
+}
+
+.uploadcontent {
+	text-align: center;
+	background: #f3f3f3;
+	overflow: auto;
+	padding-top: 20px;
+}
+
+.filepart {
+	width: 750px;
+	margin: auto;
+	margin-bottom: 20px;
+	background: white;
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+}
+
+.filepart i {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	width: 20px;
+	height: 20px;
+}
+
+.filepart a {
+	float: right;
+	margin-right: 20px;
+	color: #39adff;
+	cursor: pointer;
+}
+
+.filename {
+	float: left;
+	width: 350px;
+	position: relative;
+	text-indent: 47px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.fileuploadprocess {
+	width: 300px;
+	float: left;
+	height: 20px;
+	border: 1px solid #39adff;
+	margin-top: 8px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.fileuploadprocess div {
+	width: 0%;
+	height: 100%;
+	background: #39adff;
+}
+
+.noresource {
+	background: url('../image/noresource.png') no-repeat center;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	/* top: 50%; */
+	margin-top: 100px;
+}
+
+.noresource1 {
+	background: url('../image/noresource1.png') no-repeat center;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	/* top: 50%; */
+	margin-top: 100px;
+}
+
+.ivcontent {
+	width: 100%;
+	height: 100%;
+}
+
+/*******微课*******/
+.wklist {
+	
+}
+
+.morelist {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	border: 1px solid #e4e4e4;
+	padding-bottom: 10px;
+}
+
+.moretitle {
+	width: 100%;
+	height: 40px;
+	background: #e4e4e4;
+	text-align: left;
+	line-height: 40px;
+	text-indent: 7px;
+}
+
+.morelistcontent {
+	
+}
+
+.morelistcontent .sourcepart {
+	margin-left: 7px !important;
+}
+
+.noview {
+	height: 100%;
+	background: url(../image/noview.png) center no-repeat;
+}
+.newtabview {
+	height: 100%;
+	background: url(../image/newtabview.png) center no-repeat;
+}
+
+.bjmorelist {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	border: 1px solid #e4e4e4;
+	padding-bottom: 10px;
+}
+
+.bjmoretitle {
+	width: 100%;
+	height: 40px;
+	background: #e4e4e4;
+	text-align: left;
+	line-height: 40px;
+	text-indent: 7px;
+}
+
+.bjmorelistcontent {
+	
+}
+
+.bjmorelistcontent .sourcepart {
+	margin-left: 7px !important;
+}
+
+.nodata3 {
+	width: 100%;
+	height: 60px;
+	margin-top: 20px;
+}
+
+.nodataleft {
+	width: 300px;
+	float: left;
+	height: 100%;
+	background: url(../image/nodata3.png) right no-repeat;
+}
+
+.nodataright {
+	width: 250px;
+	height: 100%;
+	float: left;
+	text-align: left;
+	text-indent: 10px;
+}
+
+.nodataright div {
+	float: left;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	color: #666;
+}

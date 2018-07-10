@@ -1,0 +1,26 @@
+.fileload {
+	top: 30px !important;
+}
+
+.loadtext {
+	top: 60px !important;
+}
+
+.loading_cancel {
+	border: 1px solid white;
+	padding: 2px 20px;
+	border-radius: 5px;
+	color: white;
+}
+
+.loading_cancel_div {
+	position: absolute;
+	bottom: 15px;
+	text-align: center;
+	width: 100%;
+}
+
+.toast {
+	height: 9em !important;
+	margin-top: -4.5em !important;
+}

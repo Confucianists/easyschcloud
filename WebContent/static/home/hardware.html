@@ -1,0 +1,41 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>真会云课堂</title>
+<link rel="stylesheet" href="css/hardware.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="top"></div>
+
+	<div class="part">
+		<img class="pimg1" alt="" src="image/hd1.png">
+	</div>
+	<div class="part" style="background: #dfdfdd">
+		<img class="pimg1" alt="" src="image/hd2.png">
+	</div>
+	<div class="part">
+		<img class="pimg1" alt="" src="image/hd3.png">
+	</div>
+	<!-- 
+	<div style="width: 100%;">
+		<img style="display: block; width: 100%;"
+			src="${ctx}/static/homepage/image/hardware.png">
+	</div>
+	 -->
+	<div style="background: #dfdfdd; line-height: 100px;">更多产品请联系我们</div>
+	 <div id="foot"></div>
+	  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+	$.get("top.html", function(data) {
+		$("#top").html(data);
+	});
+
+	$.get("foot.html", function(data) {
+		$("#foot").html(data);
+	});
+		
+	</script>
+</body>
+</html>

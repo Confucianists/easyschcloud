@@ -1,0 +1,143 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>真会云课堂</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/example.css">
+</head>
+<body>
+
+	<div id="top"></div>
+	<div class="part"
+		style="background: url('image/softback.png') repeat-x;">
+		<img class="pimg1" alt="" src="image/example1.png">
+	</div>
+	<div class="part">
+		<img class="pimg1" alt="" src="image/exc1.png">
+	</div>
+	<div class="part">
+		<img class="pimg1" alt="" src="image/exc2.png">
+	</div>
+	<div class="part">
+		<img class="pimg1" alt="" src="image/exc3.png">
+	</div>
+	<div class="part">
+		<img class="pimg1" alt="" src="image/exc4.png">
+	</div>
+
+
+
+	<div class="picScroll-left">
+		<div class="bd">
+			<ul class="picList">
+				<li>
+					<div class="pic">
+						<a><img src="image/ex1.png" /></a>
+					</div>
+					<div class="title">
+						<a>丽水中等职业学校</a>
+					</div>
+				</li>
+				<li>
+					<div class="pic">
+						<a><img src="image/ex2.png" /></a>
+					</div>
+					<div class="title">
+						<a>浙江横店影视职业学院</a>
+					</div>
+				</li>
+				<li>
+					<div class="pic">
+						<a><img src="image/ex3.png" /></a>
+					</div>
+					<div class="title">
+						<a>青田县青少年宫 </a>
+					</div>
+				</li>
+				<li>
+					<div class="pic">
+						<a><img src="image/ex4.png" /></a>
+					</div>
+					<div class="title">
+						<a>宁波市市级第一幼儿园</a>
+					</div>
+				</li>
+
+
+
+				<li>
+					<div class="pic">
+						<a><img src="image/ex5.png" /></a>
+					</div>
+					<div class="title">
+						<a>福建建瓯一中</a>
+					</div>
+				</li>
+
+				<li>
+					<div class="pic">
+						<a><img src="image/ex6.png" /></a>
+					</div>
+					<div class="title">
+						<a>福建建阳二中</a>
+					</div>
+				</li>
+
+
+				<li>
+					<div class="pic">
+						<a><img src="image/ex7.png" /></a>
+					</div>
+					<div class="title">
+						<a>山东泰安肥城泰西中学</a>
+					</div>
+				</li>
+
+				<li>
+					<div class="pic">
+						<a><img src="image/ex8.png" /></a>
+					</div>
+					<div class="title">
+						<a>上海开放大学</a>
+					</div>
+				</li>
+				<li>
+					<div class="pic">
+						<a><img src="image/ex9.png" /></a>
+					</div>
+					<div class="title">
+						<a>西宁市南川西路小学</a>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+
+	<div id="foot"></div>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript"
+		src="js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript">
+		$(".picScroll-left").slide({
+			titCell : ".hd ul",
+			mainCell : ".bd ul",
+			effect : "left",
+			interTime : 2500,
+			autoPlay : true,
+			autoPage : true,
+			vis : 3
+		});
+
+		$.get("top.html", function(data) {
+			$("#top").html(data);
+		});
+
+		$.get("foot.html", function(data) {
+			$("#foot").html(data);
+		});
+	</script>
+</body>
+</html>

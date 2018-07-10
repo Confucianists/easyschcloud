@@ -1,0 +1,29 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>真会云课堂</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+
+	<div id="top"></div>
+	<div style="width: 1000px; margin: auto;">
+		<img style="display: block;" src="image/productback.png">
+	</div>
+	<div id="foot"></div>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+		$.get("top.html", function(data) {
+			$("#top").html(data);
+			$($(".navbar")[0]).addClass("actnavbar");
+		});
+
+		$.get("foot.html", function(data) {
+			$("#foot").html(data);
+		});
+		
+	</script>
+</body>
+</html>

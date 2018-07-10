@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+
+.zwcontent {
+	text-align: left;
+	padding-left: 30px;
+	position: relative;
+}
+
+.wenzi {
+	float: left;
+	text-align: left;
+}
+
+.tupian {
+	
+}
+
+.wenzi div {
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+
+.tupian img {
+	display: block;
+}
+
+.adimgdiv {
+	margin-top: 80px;
+}
+
+.adimgdiv img {
+	width: 100%;
+	display: block;
+}

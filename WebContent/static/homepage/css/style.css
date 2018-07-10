@@ -1,0 +1,377 @@
+@charset "utf-8";
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Microsoft YaHei';
+	min-width: 1000px;
+	text-align: center;
+	font-size: 14px;
+	color: #4d4948;
+}
+
+/* css 重置 */
+body, div, ul, li, dl, dt, dd, h2, p {
+	padding: 0;
+	margin: 0;
+	font-family: 'Microsoft YaHei';
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	border: none;
+}
+
+a {
+	blr: expression(this.onFocus = this.blur ());
+	outline: none;
+}
+
+.contentdiv {
+	width: 1000px;
+	margin: auto;
+	overflow: hidden;
+	padding-top: 40px;
+	padding-bottom: 80px;
+}
+
+.leftmenu {
+	width: 200px;
+	float: left;
+}
+
+.rightcontent {
+	width: 770px;
+	float: left;
+	padding-left: 30px;
+}
+
+.menutitle {
+	border-bottom: 1px solid #c0bfbd;
+	padding-bottom: 10px;
+}
+
+.menutitle div {
+	text-align: left;
+	font-size: 20px;
+}
+
+.submenu {
+	
+}
+
+.menua {
+	display: block;
+	width: 200px;
+	text-align: left;
+	text-indent: 10px;
+	height: 40px;
+	line-height: 40px;
+	color: #4d4948;
+}
+
+.menua:FIRST-CHILD {
+	margin-top: 10px;
+}
+
+.actmenu {
+	border: 1px solid #6c6968;
+	background: #4d4948;
+	color: white;
+}
+
+.contenttitle {
+	line-height: 40px;
+	text-align: left;
+	background: #eeeeee;
+	padding-left: 20px;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	height: 40px;
+}
+
+.contenttitle i {
+	background: url('../image/titlelogo.png') no-repeat center;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 6px;
+	top: 9px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:LINK {
+	text-decoration: none;
+}
+
+a:VISITED {
+	text-decoration: none;
+}
+
+a:ACTIVE {
+	text-decoration: none;
+}
+
+.actnavbar {
+	color: #82c424 !important;
+	border-bottom: 5px solid #82c424;
+}
+
+.footright div {
+	float: left;
+	width: 150px;
+	text-align: center;
+}
+
+.footright img {
+	display: block;
+	margin: auto;
+}
+
+.rightcontent p {
+	text-indent: 2em;
+	line-height: 25px;
+}
+
+.rightcontent p1 {
+	display: block;
+	line-height: 25px;
+}
+
+.pdiv {
+	display: block;
+	line-height: 25px;
+}
+
+.zwcontent {
+	text-align: left;
+	position: relative;
+}
+
+.top {
+	height: 60px;
+	background-color: #4d4948;
+	text-align: center;
+}
+
+.menubar {
+	margin: auto;
+	height: 100%;
+	width: 1000px;
+	text-align: left;
+}
+
+.banner {
+	margin-top: 80px;
+	width: 1000px;
+	display: block;
+	margin: auto;
+}
+
+.banner img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.content {
+	width: 100%;
+	text-align: center;
+}
+
+.middle {
+	width: 1000px;
+	margin: auto;
+}
+
+.partdiv {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.partdiv  img {
+	width: 100%;
+	display: block;
+}
+
+.navbar {
+	line-height: 60px;
+	margin-left: 55px;
+	cursor: pointer;
+	padding: 15px 0px;
+}
+
+.navbar:HOVER {
+	color: white;
+}
+
+.navbar:LINK {
+	color: white;
+}
+
+.navbar:VISITED {
+	color: white;
+}
+
+.navbar:ACTIVE {
+	color: #38adff;
+}
+
+.logobar img {
+	position: absolute;
+	top: 7px;
+}
+
+.logobar {
+	position: relative;
+	line-height: 60px;
+	cursor: pointer;
+	padding: 15px 0px;
+}
+
+.firstnavbar {
+	margin-left: 400px !important;
+}
+
+.btnbar {
+	margin-left: 8px;
+	padding: 5px;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	cursor: pointer;
+	min-width: 80px;
+	border-radius: 4px;
+}
+
+.loginbtn {
+	border-color: #ccc;
+	color: white;
+	border: 1px solid #c3c6ce;
+	margin-top: 14px;
+}
+
+.navbar:HOVER {
+	color: #82c424;
+}
+
+.loginbtn:HOVER {
+	color: #82c424;
+	border: 1px solid #82c424;
+}
+
+.loginbtn:ACTIVE {
+	
+}
+
+.firstloginbtn {
+	margin-left: 155px !important;
+}
+
+.registerbtn {
+	border-color: rgba(0, 140, 238, .72);
+	color: #fff;
+	display: inline-block;
+	border: none;
+	background: #38adff;
+}
+
+.registerbtn:HOVER {
+	background: #AAadff;
+}
+
+.registerbtn:ACTIVE {
+	background: green;
+}
+
+.registerbtn:VISITED {
+	color: black;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:LINK {
+	text-decoration: none;
+}
+
+a:VISITED {
+	text-decoration: none;
+}
+
+.foot {
+	width: 1000px;
+	height: 150px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.links {
+	width: 100%;
+	height: 200px;
+	background-color: #4d4948;
+}
+
+.linkcontent {
+	width: 1000px;
+	margin: auto;
+	height: 100%;
+	text-align: left;
+}
+
+.col {
+	float: left;
+	width: 20%;
+}
+
+.coltitle {
+	line-height: 30px;
+	color: white;
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+.adivs {
+	
+}
+
+.adivs a {
+	display: block;
+	color: #b5b5b6;
+	line-height: 25px;
+}
+
+.footleft {
+	width: 700px;
+	float: left;
+	text-align: left;
+}
+
+.footright {
+	width: 300px;
+	float: left;
+}
+
+.footleft div {
+	margin-top: 20px;
+}
+
+.footleft i {
+	background: url('../image/beian.png') no-repeat center;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+}

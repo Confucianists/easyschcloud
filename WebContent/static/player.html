@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#a1 {
+	margin: auto;
+}
+</style>
+</head>
+<body>
+
+	<div id="a1"></div>
+	<script type="text/javascript" src="ckplayer/ckplayer.js"
+		charset="utf-8"></script>
+	<script type="text/javascript">
+		var flashvars = {
+			f : getQueryString("src"),
+			//'rtmp://60.12.240.106:1935/vod|/file/local://D:/fms/data/file/20170504/multi/11/bc8c70ea5bc9633f015bd1683c79000b_20170504/bc8c70ea5bc9633f015bd1a4a9310010.mp4',
+			c : 0,
+			b : 1
+		};
+		var params = {
+			bgcolor : '#FFF',
+			allowFullScreen : true,
+			allowScriptAccess : 'always',
+			wmode : 'transparent'
+		};
+		CKobject.embedSWF('ckplayer/ckplayer.swf', 'a1', 'ckplayer_a1', '800',
+				'600', flashvars, params);
+
+		function getQueryString(name) {
+			var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+			var r = window.location.search.substr(1).match(reg);
+			if (r != null)
+				return unescape(r[2]);
+			return null;
+		}
+	</script>
+</body>

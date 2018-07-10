@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+<script type="text/javascript"
+	src="//apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js">
+	
+</script>
+</head>
+<body>
+	<Div id="data"></Div>
+	<button onclick="ddd()">aaa</button>
+	<script>
+		function ddd() {
+			data("1497853322911WCGO3");
+			data("1497853391290EEA1H");
+		}
+
+		function data(key) {
+
+			var d = new Date();
+			$.post(
+					"http://dc.hanlinbode.com:8182/websocketserver/push/B/one?key="
+							+ key + "&msg=" + key + ":" + d.getTime(),
+					function(data) {
+						$("#data").append(
+								JSON.stringify(data) + "," + d.getTime()
+										+ "<br> ");
+						setTimeout('data(\"' + key + '\")', 10000);
+					});
+		}
+	</script>
+</body>
+</html>

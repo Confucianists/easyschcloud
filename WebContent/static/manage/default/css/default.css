@@ -1,0 +1,342 @@
+/*
+������ʽ
+*/
+body {
+	font-family: Microsoft YaHei;
+	font-size: 14px;
+	color: #555555;
+}
+
+.hlrow {
+	width: 100%;
+	margin-bottom: 5px;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.hltable {
+	width: 100%;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.hltitle {
+	overflow: hidden;
+	line-height: 30px;
+	background-color: #d4d4d4;
+}
+
+.hltitle .titlename {
+	float: left;
+	margin-left: 15px;
+	font-weight: bold;
+}
+
+
+.hltitle .titleactions {
+	float: right;
+	margin-right: 10px;
+}
+
+.actionbtn {
+	padding: 2px 10px;
+	margin-left: 5px;
+	color: white;
+	cursor: pointer;
+	border-radius: 2px;
+}
+
+.bluebtn {
+	background-color: #3e82da;
+}
+
+.lightblue {
+	background-color: #6a99eb;
+}
+
+.bluebtn:HOVER {
+	background-color: #3e6fc7;
+}
+
+.lightblue:HOVER {
+	background-color: #5a89dc;
+}
+
+.redbtn {
+	background: #5a89dc;
+}
+
+.hltablecontent {
+	border-top: none;
+	background-color: white;
+}
+
+.hltablecontent table {
+	width: 100%;
+}
+
+.hltablecontent table td, th {
+	text-align: left;
+	padding: 8px 0 8px 0;
+}
+
+.hltablecontent table tr td:FIRST-CHILD, th:FIRST-CHILD {
+	padding-left: 15px;
+}
+
+.hltablecontent table th {
+	/*background-color: #fcf6eb;*/
+	background-color: #e9f3ff;
+	font-weight: bold;
+}
+
+.hltablecontent table tr {
+	text-align: left;
+}
+
+.hltablecontent table tr:nth-child(odd) {
+	text-align: left;
+	/*background-color: #e9f3ff;*/
+	background-color:#F5F5F5;
+}
+
+.hltablecheck {
+	width: 50px;
+}
+
+.hlsort {
+	width: 50px;
+}
+
+.actiona {
+	margin-right: 10px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #3E82DA;
+}
+
+.hltoolbar {
+	overflow: hidden;
+	padding: 2px;
+}
+
+.hltoolbar div {
+	height: 40px;
+	line-height: 40px;
+	float: left;
+}
+
+.hlrowsec {
+	width: 100%;
+}
+
+.hlrowsec .hltd {
+	
+}
+
+.hlrowsec .hltd33 {
+	width: 20%;
+}
+
+.hlrowsec .hltd45 {
+	width: 45%;
+}
+
+.hlrowsec .hltd25 {
+	width: 25%;
+}
+
+.hlrowsec .hltd .tdleft {
+	width: 40%;
+	text-align: right;
+}
+
+.hlrowsec .hltd .tdleft label {
+	margin-right: 30px;
+}
+
+.hlrowsec .hltd .tdright {
+	width: 60%;
+}
+
+.hlrowsec .hltd .tdright input, .tdright select {
+	width: 100%;
+	border: 1px solid #cad3df;
+	border-radius: 5px;
+}
+
+.hlsearchdiv {
+	text-align: right;
+}
+
+.hlinput {
+	height: 25px;
+}
+
+.hlframe {
+	position: fixed;
+	width: 600px;
+	left: 50%;
+	margin-left: -300px;
+	box-shadow: 1px 4px 32px 8px #333;
+	display: none;
+	top: 50%;
+	background: white;
+	z-index: 9999;
+}
+
+.backcover {
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.8;
+	z-index: 999;
+	display: none;
+}
+
+.hlframetitle {
+	line-height: 50px;
+	height: 50px;
+	padding-left: 30px;
+	font-size: 16px;
+	background: #5a89dc;
+	color: white;
+}
+
+.hlframecontent {
+	padding: 10px;
+	overflow: auto;
+}
+
+.hlframeaction {
+	border-top: 1px solid #cad3df;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+
+.hlformrow {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+}
+
+.formlabel {
+	float: left;
+	padding-right: 20px;
+	text-align: right;
+	width: 150px;
+	line-height: 50px;
+}
+
+.frominput {
+	float: left;
+}
+
+.frominput input, .frominput select, .frominput textarea {
+	width: 200px;
+	border: 1px solid #cad3df;
+	border-radius: 5px;
+}
+
+.frominput img {
+	width: 200px;
+}
+
+.frominput textarea {
+	margin-top: 10px;
+	height: 100px;
+}
+
+.btfont {
+	color: red;
+	margin-right: 10px;
+}
+
+.errortip {
+	float: left;
+	margin-left: 20px;
+	color: red;
+	display: none;
+}
+
+.hlselect {
+	height: 28px;
+}
+
+.hlformdiv {
+	overflow: hidden;
+	width: 100%;
+}
+
+.nowpage {
+	color: #0099e8;
+}
+
+.hltablefoot {
+	background-color: #d4d4d4;
+	padding: 5px 15px;
+}
+
+.hlrowsec .hltd .tdright2 input, .tdright2 select {
+	width: 40%;
+}
+
+.hlframeaction .actionbtn {
+	padding: 10px 30px !important;
+}
+
+.hlcheckbox {
+	width: 19px;
+	cursor: pointer;
+}
+
+.hlcheckbox i {
+	background: url("../../images/check.png") no-repeat center;
+	display: inline-block;
+	height: 18px;
+	margin-top: -2px;
+	vertical-align: middle;
+	width: 18px;
+}
+
+.hlchecked i {
+	background: url("../../images/checked.png") !important;
+}
+
+.hlcheckbox input {
+	display: none;
+}
+
+.sorting, .sorting_asc, .sorting_desc, .sorting_asc_disabled,
+	.sorting_desc_disabled {
+	cursor: pointer;
+	*cursor: hand;
+}
+
+.sorting {
+	background: url('../../images/sort_both.png') no-repeat center right;
+}
+
+.sorting_asc {
+	background: url('../../images/sort_asc.png') no-repeat center right;
+}
+
+.sorting_desc {
+	background: url('../../images/sort_desc.png') no-repeat center right;
+}
+
+.sorting_asc_disabled {
+	background: url('../../images/sort_asc_disabled.png') no-repeat center
+		right;
+}
+
+.sorting_desc_disabled {
+	background: url('../../images/sort_desc_disabled.png') no-repeat center
+		right;
+}

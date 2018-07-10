@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body {
+	background: #747474;
+	font-family: "MicrosoftYaHei";
+	font-size: 14px;
+}
+
+.imgdiv {
+	width: 150px;
+	height: 120px;
+	position: fixed;
+	top: 50%;
+	margin-top: -60px;
+	left: 50%;
+	margin-left: -75px;
+	text-align: center;
+}
+
+.imgdiv img {
+	
+}
+
+.imgdiv div {
+	color: white;
+	margin-top: 20px;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta
+	content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+	name="viewport">
+
+<title>登录成功</title>
+
+<style type="text/css">
+.imgdiv {
+	
+}
+</style>
+</head>
+<body>
+	<div id="code"></div>
+</body>
+<script type="text/javascript" src="jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="jquery.qrcode.min.js"></script>
+<script type="text/javascript">
+	var code;
+	var state = 1;
+	getQRCODE();
+	function getQRCODE() {
+		$.post("http://dc.hanlinbode.com/wxpage/statecode", function(d) {
+			code = d.code;
+			$('#code').qrcode(d.url);
+			getstate();
+		});
+	}
+	function getstate() {
+		$
+				.post(
+						"http://dc.hanlinbode.com/wxpage/loginstate?key="
+								+ code + "&mystate=" + state,
+						function(d) {
+							console.log(d.state);
+							if (d.state == -1) {
+								alert("二维码过期");
+							} else if (d.state == 2) {
+								console.log("已扫描");
+							} else if (d.state == 3) {
+								console.log("已登录");
+								window.location.href = "http://dc.hanlinbode.com/wxpage/webwxautologin/"
+										+ code;
+							} else {
+								getstate();
+							}
+
+						});
+	}
+</script>
+
+
+</html>

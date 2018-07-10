@@ -1,0 +1,84 @@
+@CHARSET "UTF-8";
+
+
+
+
+
+/* banner-box */
+.banner-box {
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	position: relative;
+	overflow: hidden;
+}
+
+.banner-box .bd {
+	width: 100% !important;
+}
+
+.banner-box .bd li .m-width {
+	width: 100% px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.banner-box .bd li {
+	width: 100% !important;
+}
+
+.banner-box .bd li a {
+	display: block;
+	background-size: auto;
+}
+
+.banner-btn {
+	width: 100%;
+	position: absolute;
+	top: 180px;
+	left: 50%;
+	margin-left: -505px;
+}
+
+.banner-btn a {
+	display: block;
+	width: 49px;
+	height: 104px;
+	position: absolute;
+	top: 0;
+	filter: alpha(opacity = 40);
+	-moz-opacity: 0.4;
+	-khtml-opacity: 0.4;
+	opacity: 0.4;
+}
+
+.banner-btn a.prev {
+	left: 20px;
+	background: url(../image/foot.png) no-repeat 0 0;
+}
+
+.banner-btn a.next {
+	right: 20px;
+	background: url(../image/foot.png) no-repeat -49px 0;
+}
+
+.banner-box .hd {
+	position: absolute;
+	top: 285px;
+	left: 50%;
+}
+
+.banner-box .hd ul li {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	text-indent: -9999px;
+	margin-right: 20px;
+	background: #ccc;
+	float: left;
+	cursor: pointer;
+}
+
+.banner-box .hd ul li.on {
+	background: #DA324D;
+}

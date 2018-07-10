@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+<link rel="stylesheet"
+	href="//res.wx.qq.com/open/libs/weui/1.1.2/weui.min.css" />
+<script type="text/javascript"
+	src="//apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js">
+	
+</script>
+<script src="qrcode.min.js">
+	
+</script>
+</head>
+<body>
+	<div id="loadingToast" style="display: none;">
+		<div class="weui-mask_transparent"></div>
+		<div class="weui-toast">
+			<i class="weui-loading weui-icon_toast"></i>
+			<p class="weui-toast__content">数据加载中</p>
+		</div>
+	</div>
+
+
+	<div id="toast" style="display: none;">
+		<div class="weui-mask_transparent"></div>
+		<div class="weui-toast">
+			<i class="weui-icon-success-no-circle weui-icon_toast"></i>
+			<p class="weui-toast__content" id="tipcontent"></p>
+		</div>
+	</div>
+
+
+	<video id="media" controls="controls"
+		poster="teacher/image/defaultvideo.png"
+		src="http://pullhls5ac21706.live.126.net/live/46f9f31717284320bb9068c0970c4795/playlist.m3u8"
+		width="400px" height="400px"></video>
+
+
+	<script>
+		//http://dc.hanlinbode.com:8183/microclass/20170614/1497408546832DPTJ.mp4
+		Media = document.getElementById("media");
+		//audio和video都可以通过JS获取对象,JS通过id获取video和audio的对象
+		var isload = false;
+		Media.addEventListener("play", function(e) {
+			if (!isload) {
+				$("#loadingToast").show();
+			}
+
+		}, false);
+
+		Media.addEventListener("loadstart", function(e) {
+			//	$("#loadingToast").show();
+			//	console.log("load");
+			//	alert("load");
+		}, false);
+		Media.addEventListener("loadeddata", function(e) {
+			isload = true;
+			$("#loadingToast").hide();
+			console.log("loadeddata");
+		}, false);
+		Media.addEventListener("progress", function(e) {
+			//console.log("progress");
+		}, false);
+
+		Media.addEventListener("error", function(e) {
+			console.log("error");
+			showTip("直播未开始请稍后。");
+			//	Media.preload = "nonoe";
+			if (isWeiXin()) {
+				Media.load();
+			}
+			//
+		}, false);
+
+		Media.addEventListener("stalled", function(e) {
+			console.log("stalled");
+			showTip("直播未开始请稍后");
+			if (isWeiXin()) {
+				Media.load();
+			}
+		}, false);
+
+		function showTip(str, time) {
+			$("#loadingToast").hide();
+			$("#tipcontent").html(str);
+			$("#toast").show();
+			setTimeout(function() {
+				$("#toast").hide();
+			}, time == undefined ? 2000 : time);
+		}
+
+		function isWeiXin() {
+			var ua = window.navigator.userAgent.toLowerCase();
+			if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+				return true;
+			} else {
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>

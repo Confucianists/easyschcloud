@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+
+.treediv {
+	width: 130px;
+	position: absolute;
+	top: 55px;
+	bottom: 0;
+	overflow: auto;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.treetitle {
+	overflow: hidden;
+	line-height: 40px;
+	background-color: #d4d4d4;
+	font-weight: bold;
+	padding-left: 15px;
+}
+
+.treecontent {
+	
+}
+
+.treeitem {
+	line-height: 30px;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 5px;
+}
+
+.tablediv {
+	position: absolute;
+	top: 55px;
+	bottom: 0;
+	overflow: auto;
+	left: 150px;
+	right: 0;
+}
+
+.treeclick {
+	background-color: #3e82da;
+	color: white;
+}
+
+.formimg {
+	
+}
+
+.deleteimg {
+	background-color: #d84a38;
+	color: white;
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.tdlogo {
+	width: 50px;
+}

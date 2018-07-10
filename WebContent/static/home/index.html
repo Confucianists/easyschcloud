@@ -1,0 +1,134 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>真会云课堂</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/index.css">
+<style type="text/css">
+.showimg {
+	display: block;
+	float: left;
+	width: 300px;
+	margin-right: 50px;
+	width: 300px;
+}
+</style>
+</head>
+<body>
+
+
+
+	<div id="top"></div>
+	<div class="banner banner-box">
+		<div class="bd">
+			<ul>
+				<li>
+					<div class="m-width">
+						<a href="javascript:void(0);"><img src="image/banner1.jpg" /></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-width">
+						<a href="javascript:void(0);"><img src="image/banner2.jpg" /></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-width">
+						<a href="javascript:void(0);"><img src="image/banner4.jpg" /></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-width">
+						<a href="javascript:void(0);"><img src="image/banner3.jpg" /></a>
+					</div>
+				</li>
+				<li>
+					<div class="m-width">
+						<a href="javascript:void(0);"><img src="image/banner5.jpg" /></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="banner-btn">
+			<a class="prev" href="javascript:void(0);"></a> <a class="next"
+				href="javascript:void(0);"></a>
+			<div class="hd">
+				<ul></ul>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 
+	<div>
+		<div
+			style="position: relative; text-align: left; width: 1000px; margin: auto; height: 40px; line-height: 40px; text-indent: 50px; font-size: 23px;">
+			<i
+				style="background: url(image/indexlogo1.png) center no-repeat; position: absolute; width: 40px; height: 40px; left: 0;"></i><strong>最新动态</strong>
+		</div>
+	</div>
+	<div style="background: #cacaca; margin-top: 20px;">
+		<div
+			style="width: 1000px; margin: auto; padding: 20px 0; overflow: hidden;">
+			<img class="showimg" src="image/indexshow1.jpg"> <img
+				class="showimg" src="image/indexshow2.jpg"> <img
+				style="margin-right: 0;" class="showimg" src="image/indexshow3.jpg">
+		</div>
+
+	</div>
+	<div style="text-align: left;">
+		<div
+			style="width: 1000px; margin: auto; height: 60px; line-height: 60px; font-size: 20px; margin-top: 10px;">
+			<strong> 翰林博德之夜</strong>
+		</div>
+		<div
+			style="width: 1000px; font-size: 16px; margin: auto; line-height: 28px; margin-bottom: 40px;">2017年5月6日晚，第72届中国教育装备展示会衔接会与福州金源大饭店举行，这一夜又是翰林博德之夜，来自全国各地的教育届领导与企业代表在今夜共襄盛举！！</div>
+	</div>
+	 -->
+	
+	<div id="foot"></div>
+</body>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">
+	(function($) {
+		$(function() {
+			$.get("top.html", function(data) {
+				$("#top").html(data);
+			});
+
+			$.get("foot.html", function(data) {
+				$("#foot").html(data);
+			});
+
+			$('a[href*=#]').on("click", function(e) {
+				var anchor = $(this);
+				$('html, body').stop().animate({
+					scrollTop : $(anchor.attr('href')).offset().top - 80
+				}, 1000);
+				e.preventDefault();
+			});
+
+			$(".prev,.next").hover(function() {
+				$(this).stop(true, false).fadeTo("show", 0.9);
+			}, function() {
+				$(this).stop(true, false).fadeTo("show", 0.4);
+			});
+
+			$(".banner-box").slide({
+				titCell : ".hd ul",
+				mainCell : ".bd ul",
+				effect : "fold",
+				interTime : 3500,
+				delayTime : 500,
+				autoPlay : true,
+				autoPage : true,
+				trigger : "click"
+			});
+
+			$(".banner-box .hd").css("margin-left",
+					"-" + ($(".banner-box .hd").width() / 2 - 10) + "px");
+		})
+	})(jQuery)
+</script>
+</html>

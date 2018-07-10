@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>easyschcloud</display-name>
+	
+	<!--shiro拦截器 -->
+	<!-- <filter>    
+    	<filter-name>shiroFilter</filter-name>    
+    	<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>    
+  	</filter>
+  	<filter-mapping>    
+   		<filter-name>shiroFilter</filter-name>    
+    	<url-pattern>/*</url-pattern>    
+  	</filter-mapping> -->
+
+	<filter>
+		<filter-name>sitemesh3</filter-name>
+		<filter-class>org.sitemesh.config.ConfigurableSiteMeshFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>sitemesh3</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			classpath*:/applicationContext.xml,
+		</param-value>
+	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>openEntityManagerInViewFilter</filter-name>
+		<filter-class>org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>openEntityManagerInViewFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+
+	<!--管理后台拦截器 -->
+	<!--<filter>
+		<filter-name>RequestFilter</filter-name>
+		<filter-class>com.hlbd.filter.RequestFilter</filter-class>
+		<init-param>
+			<param-name>targetFilterLifecycle</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>RequestFilter</filter-name>
+		<url-pattern>/manage/*</url-pattern>
+	</filter-mapping>
+	 -->
+
+	<!--教师后台拦截器 -->
+	<!--<filter>
+		<filter-name>TeacherRequestFilter</filter-name>
+		<filter-class>com.hlbd.filter.TeacherRequestFilter</filter-class>
+		<init-param>
+			<param-name>targetFilterLifecycle</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>TeacherRequestFilter</filter-name>
+		<url-pattern>/teacher/*</url-pattern>
+	</filter-mapping>
+	 -->
+
+
+	<!--白板接口拦截器 -->
+	<!--<filter>
+		<filter-name>PCAPIRequestFilter</filter-name>
+		<filter-class>com.hlbd.filter.PCAPIRequestFilter</filter-class>
+		<init-param>
+			<param-name>targetFilterLifecycle</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>PCAPIRequestFilter</filter-name>
+		<url-pattern>/pcapi/*</url-pattern>
+	</filter-mapping>
+	 -->
+
+
+	<!--APP接口拦截器 -->
+	<!--<filter>
+		<filter-name>APPAPIRequestFilter</filter-name>
+		<filter-class>com.hlbd.filter.APPAPIRequestFilter</filter-class>
+		<init-param>
+			<param-name>targetFilterLifecycle</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>APPAPIRequestFilter</filter-name>
+		<url-pattern>/appapi/*</url-pattern>
+	</filter-mapping>
+	 -->
+
+	
+	
+	<!--校易云拦截器 -->
+	<filter>
+		<filter-name>UserRequestFilter</filter-name>
+		<filter-class>com.ymy.filter.UserRequestFilter</filter-class>
+		<init-param>
+			<param-name>targetFilterLifecycle</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>UserRequestFilter</filter-name>
+		<url-pattern>/manage/*</url-pattern>
+	</filter-mapping>
+	
+	
+	 
+
+
+	<servlet>
+		<servlet-name>springServlet</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>/WEB-INF/spring-mvc.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	<session-config>
+		<session-timeout>20</session-timeout>
+	</session-config>
+
+	<welcome-file-list>
+		<welcome-file>homepage/index</welcome-file>
+	</welcome-file-list>
+</web-app>
+

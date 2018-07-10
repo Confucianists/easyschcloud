@@ -1,0 +1,126 @@
+@CHARSET "UTF-8";
+
+.cwbody {
+	margin: auto;
+	width: 1000px;
+	position: relative;
+	border: 1px solid #cfd3d5;
+	background: white;
+	overflow: hidden;
+	height: 500px;
+}
+
+.infoleft {
+	float: left;
+	width: 249px;
+	border-right: 1px solid #cfd3d5;
+	height: 100%;
+}
+
+.inforight {
+	float: left;
+	width: 750px;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.rowdiv {
+	width: 80%;
+	margin: auto;
+	height: 50px;
+	line-height: 50px;
+}
+
+.label {
+	float: left;
+	width: 100px;
+	text-align: left;
+}
+
+.values {
+	text-align: left;
+	float: left;
+}
+
+.actiondiv {
+	text-align: left;
+}
+
+.loggtip {
+	margin-top: 25px;
+}
+
+.logodiv {
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	/* float: left; */
+	background-size: cover !important;
+	margin-top: 20px;
+	border: 1px solid #cfd3d5;
+	margin-bottom: 30px;
+}
+
+.infoleft a {
+	padding: 8px 22px;
+	border: solid 1px #39adff;
+	color: #39adff;
+	border-radius: 6px;
+}
+
+.inforight input {
+	width: 300px;
+	border: 1px solid #cfd3d5;
+	outline: none;
+	text-indent: 1em;
+	margin-left: 0 !important;
+}
+
+.sexa {
+	position: relative;
+	padding: 10px 38px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.sexi {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-image: url(../image/radio.png);
+	left: 0;
+	top: 10px;
+}
+
+.sexis i {
+	background-image: url(../image/selectradio.png) !important;
+}
+
+.submit {
+	background: #39adff;
+	color: white;
+	padding: 6px 40px;
+	border-radius: 5px;
+	letter-spacing: 5px;
+}
+
+.tipdiv1 {
+	position: fixed;
+	width: 600px;
+	top: 20%;
+	left: 50%;
+	margin-left: -300px;
+	background-color: white;
+	box-shadow: 0 5px 10px #333;
+	display: none;
+	z-index: 9999;
+}
+
+.tipcontent1 {
+	text-align: center;
+	padding: 35px 20px;
+	font-size: 16px;
+}

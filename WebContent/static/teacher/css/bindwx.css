@@ -1,0 +1,317 @@
+@CHARSET "UTF-8";
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "MicrosoftYaHei";
+	font-size: 14px;
+	min-width: 1000px;
+	background: #f3f3f3;
+}
+
+.top {
+	height: 80px;
+	border-bottom: 1px solid #cfd3d5;
+	text-align: center;
+	background: white;
+}
+
+.top .teachleft {
+	width: 200px;
+	height: 100%;
+	float: left;
+}
+
+.top .teachleft div {
+	width: 100%;
+	height: 80px;
+	background: url(../image/indextitle.png) center no-repeat;
+	background-size: 80%;
+}
+
+.topcontent {
+	width: 1000px;
+	margin: auto;
+	height: 100%;
+	/**display: -webkit-box;
+	display: -moz-box;
+	display: -o-box;
+	display: -ms-flexbox;**/
+}
+
+.top .teachmiddle {
+	height: 100%;
+	flex: 1;
+	-ms-flex: 1;
+	-webkit-box-flex: 1;
+	float: left;
+}
+
+.top .teachright {
+	width: 200px;
+	height: 100%;
+	line-height: 80px;
+	float: right;
+}
+
+.menubar {
+	height: 100%;
+	margin-left: 50px;
+	text-align: left;
+}
+
+.bar {
+	height: 100%;
+	width: 100px;
+	line-height: 80px;
+	padding: 26px 5px;
+	font-size: 18px;
+	margin-right: 40px;
+	color: #96a1ae;
+}
+
+.actbar {
+	color: black !important;
+	border-bottom: 3px solid #39adff;
+}
+
+.teachername {
+	margin-left: 10px;
+	color: #555555;
+	font-size: 16px;
+	float: left;
+}
+
+.teacherlogo {
+	width: 50px;
+	height: 50px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	float: left;
+	background-size: cover !important;
+	cursor: pointer;
+	margin-top: 15px;
+	border: 1px solid #cfd3d5;
+}
+
+.logout {
+	color: #39adff;
+	font-size: 16px;
+	margin-left: 20px;
+}
+
+.body {
+	width: 100%;
+	overflow: hidden;
+}
+
+.foot {
+	width: 100%;
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+	margin-top: 20px;
+}
+
+a:VISITED {
+	text-decoration: none;
+}
+
+a:LINK {
+	text-decoration: none;
+}
+
+.cwbody {
+	height: 100%;
+	margin: auto;
+	width: 1000px;
+	border: 1px solid #cfd3d5;
+	background: white;
+	margin-top: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.content {
+	width: 800px;
+	margin: auto;
+}
+
+.imgdiv {
+	width: 100%;
+}
+
+.imgdiv img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.formdiv {
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.row {
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	width: 100%;
+}
+
+.formlabel {
+	float: left;
+	padding-right: 20px;
+	text-align: right;
+	width: 150px;
+	line-height: 50px;
+}
+
+.btfont {
+	color: red;
+	margin-right: 10px;
+}
+
+.frominput {
+	float: left;
+}
+
+.frominput input {
+	width: 300px;
+	border: 1px solid #cfd3d5;
+	outline: none;
+	text-indent: 1em;
+}
+
+.hlinput {
+	height: 25px;
+}
+
+.btntip {
+	float: left;
+	margin-left: 20px;
+}
+
+.errortip {
+	float: left;
+	margin-left: 20px;
+	color: red;
+	display: none;
+}
+
+.bluebtn {
+	background-color: #39adff;
+	color: white;
+}
+
+.btna {
+	padding: 5px 20px;
+	line-height: 40px;
+	border: 1px solid #39adff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.actionrow {
+	margin-top: 30px;
+	padding-left: 170px;
+}
+
+.tip {
+	width: 100%;
+	text-align: center;
+	margin-top: 50px !important;
+}
+
+.step1 {
+	
+}
+
+.step2 {
+}
+
+.step3 {
+}
+
+.enablebtn {
+	background: #f3f3f3 !important;
+	border: none;
+	color: #39adff;
+	cursor: not-allowed;
+}
+
+.sexa {
+	position: relative;
+	padding: 10px 38px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.sexi {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-image: url(../image/radio.png);
+	left: 0;
+	top: 10px;
+}
+
+.sexis i {
+	background-image: url(../image/selectradio.png) !important;
+}
+
+.selevtdiv {
+	width: 300px;
+	height: 100px;
+	background: white;
+	z-index: 999;
+	position: absolute;
+	top: 39px;
+	border: 1px solid;
+	/* display: none; */
+}
+
+#qrdiv {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.tipdiv {
+	position: fixed;
+	width: 600px;
+	top: 20%;
+	left: 50%;
+	margin-left: -300px;
+	background-color: white;
+	box-shadow: 0 5px 10px #333;
+	display: none;
+	z-index: 9999;
+}
+
+.tiptitle {
+	background: #39adff;
+	color: white;
+	font-size: 16px;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 30px;
+}
+
+.tipcontent {
+	text-align: center;
+	padding: 35px 20px;
+	font-size: 16px;
+}
+
+.tipaction {
+	border-top: 1px solid #ddd;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	padding-right: 10px;
+}
+
+.tipaction .actionbtn {
+	padding: 10px 30px !important;
+}

@@ -1,0 +1,211 @@
+@CHARSET "UTF-8";
+
+.cwbody {
+	display: box;
+	display: -webkit-box;
+	height: 100%;
+	margin: auto;
+	width: 1000px;
+	position: relative;
+}
+
+.filebar {
+	height: 80px;
+	border: 1px solid #cfd3d5;
+	display: box;
+	display: -webkit-box;
+	text-align: left;
+	background: white;
+	width: 100%;
+}
+
+.filecount {
+	font-size: 25px;
+}
+
+.fileprocess {
+	width: 200px;
+	height: 100%;
+	padding-left: 10px;
+	line-height: 80px;
+}
+
+.btndiv {
+	flex: 1;
+	-webkit-box-flex: 1;
+	height: 100%;
+}
+
+.searchdiv {
+	width: 400px;
+	height: 100%;
+	line-height: 80px;
+}
+
+.left {
+	float: left;
+	width: 250px;
+}
+
+.right {
+	width: 679px;
+	float: left;
+}
+
+.processall {
+	width: 100%;
+	background: #d7dbdf;
+	height: 15px;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.processuse {
+	height: 100%;
+	width: 60%;
+	background: #92ef55;
+	border-radius: 10px;
+}
+
+.fbottom {
+	margin-top: 10px;
+}
+
+.btndiv .btna {
+	margin-left: 20px;
+}
+
+.btndiv div {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.searchborder {
+	background: #f3f3f3;
+	width: 300px;
+	border-radius: 20px;
+	height: 40px;
+	margin-top: 20px;
+	overflow: hidden;
+	position: relative;
+}
+
+.searchborder i {
+	background: url('../image/search.png') center;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	left: 10px;
+	top: 8px;
+}
+
+.searchborder input {
+	border: medium none;
+	box-shadow: inset 0 0 0 1000px #f3f3f3;
+	height: 40px;
+	margin-left: 45px;
+	outline: none;
+	width: 185px;
+}
+
+.searchborder a {
+	padding: 10px 20px;
+	background: #39adff;
+	color: white;
+	float: right;
+	cursor: pointer;
+}
+
+.files {
+	
+}
+
+.righttable {
+	position: absolute;
+	left: 0;
+	border: 1px solid #cfd3d5;
+	top: 95px;
+	bottom: 50px;
+	right: 0;
+	background: white;
+	overflow: auto;
+}
+
+.cwpagation {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0;
+}
+
+
+.controller {
+	border: 1px solid #cfd3d5;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	display: none;
+	background: url(../image/actionxl.png) no-repeat center;
+	background-size: 70%;
+	border-radius: 3px;
+}
+
+.actionbardiv {
+	width: 100px;
+	height: 0px;
+	position: absolute;
+	top: 26px;
+	right: 10px;
+	overflow: hidden;
+	border: 1px solid #cfd3d5;
+	border-radius: 3px;
+	display: none;
+}
+
+.btnbardiv {
+	width: 100%;
+	height: 30px;
+	float: left;
+	line-height: 30px;
+	text-indent: 40px;
+	text-align: left;
+	position: relative;
+}
+
+.selectbtnbardiv {
+	background-color: #39adff;
+}
+
+.btnbardiv i {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 10px;
+	top: 5px;
+}
+
+.i1 {
+	background: url('../image/actionfx.png') no-repeat center;
+}
+
+.i2 {
+	background: url('../image/actioncmm.png') no-repeat center;
+}
+
+.i3 {
+	background: url('../image/actionsc.png') no-repeat center;
+}
+
+.i1s {
+	background: url('../image/actionfxs.png') no-repeat center;
+}
+
+.i2s{
+	background: url('../image/actioncmms.png') no-repeat center;
+}
+
+.i3s {
+	background: url('../image/actionscs.png') no-repeat center;
+}

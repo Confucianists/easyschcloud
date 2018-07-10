@@ -1,0 +1,163 @@
+@CHARSET "UTF-8";
+
+.cwbody {
+	height: 100%;
+	margin: auto;
+	width: 100%;
+	position: relative;
+}
+.hlechart{
+	/*border: 1px solid red;*/
+	height: 90%;
+	width: 38%;
+	float: left;
+	margin-left: 10px;
+	position: relative;
+	/*margin-top: 50px;*/
+
+}
+.middletable{
+	/*border: 1px solid green;*/
+	height: 87%;
+	width: 28%;
+	float: left;
+	margin-left: 0px;
+	margin-top: 20px;
+	position: relative;
+	background-color: white;
+	border-top: none;
+	/*margin-top: 50px;*/
+	
+}
+.righttable{
+	/*border: 1px solid yellow;*/
+	height: 87%;
+	width: 26%;
+	float: left;
+	margin-left: 30px;
+	margin-top: 20px;
+	position: relative;
+	background-color: white;
+	border-top: none;
+	/*margin-top: 50px;*/
+}
+.tabletitle{
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+	text-align: center;
+	/*border: 1px solid white;*/
+	font-size: 20px;
+	margin-top: 20px;
+	background-color: white;
+}
+.tablecontent1 {
+	/*border-top: none;*/
+	/*background-color: #212139;*/
+	height: 100%;
+	width: 94%;
+	margin-left: 3%;
+	float: left;
+
+}
+.tablecontent1 table{
+	
+}
+.tablecontent1 th{
+	color: black;
+}
+.tablecontent1 table tr:nth-child(odd) {
+	text-align: left;
+	background-color: #2D2D53;
+}
+.tablecontent1 table tbody tr:HOVER{
+	transform: translate3d(-2px, 0, -2px);
+	box-shadow: 0px 0px 13px 0px #7B7B7B;
+}
+.tablecontent1 table th {
+	background-color: white;
+	font-weight: bold;
+}
+.tablecontent1 table td, th {
+	text-align:center;  
+	padding: 12px 0 12px 0;
+	color: white;
+}
+
+.tablecontent2 {
+	/*border-top: none;*/
+	/*background-color: #212139;*/
+	height: 100%;
+	width: 94%;
+	margin-left: 3%;
+	float: left;
+}
+.tablecontent2 table{
+	
+}
+.tablecontent2 th{
+	color: black;
+}
+.tablecontent2 table tr:nth-child(odd) {
+	/*text-align: left;*/
+	background-color: #2D2D53;
+}
+.tablecontent2 table tbody tr:HOVER{
+	transform: translate3d(-2px, 0, -2px);
+	box-shadow: 0px 0px 13px 0px #7B7B7B;
+}
+.tablecontent2 table th {
+	background-color: white;
+	font-weight: bold;
+}
+.tablecontent2 table td, th {
+	text-align:center;  
+	padding: 23px 0 23px 0;
+	color: white;
+}
+.hlechartcontainer{
+	width: 100%;
+	height:50%;
+	margin-top: 200px;
+	position: relative;
+
+}
+.echarttitle{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	/*border: 1px solid white;*/
+	width: 200px;
+	height: 90px;
+	background-color: white;
+}
+.echartlabel{
+	margin-top: 15px;
+	margin-left: 20px;
+}
+.echartlabel label{
+	font-size: 16px;
+	color: black;
+}
+
+.echartdes{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 180px;
+	height: 40px;
+	margin-left: -70px;
+	margin-top: -20px;
+	/*border: 1px solid red;*/
+}
+
+.echartdes label{
+	font-size: 20px;
+	color: white;
+}
+.tlogo{
+ 	height: 40px;
+ 	width: 40px;
+ 	background-size: cover !important;
+ 	margin: auto;
+}

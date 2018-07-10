@@ -1,0 +1,93 @@
+﻿<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<META content="IE=7.0000" http-equiv="X-UA-Compatible">
+<TITLE>JQuery Media Plugin - Misc Demo</TITLE>
+<META content="text/html; charset=UTF-8" http-equiv=content-type>
+<META content=text/css http-equiv=Content-Style-Type>
+<LINK rel=stylesheet type=text/css
+	href="JQuery%20Media%20Plugin%20-%20Misc%20Demo_files/jq.css"
+	media=screen>
+<STYLE type=text/css>
+#main {
+	TEXT-ALIGN: center;
+	MARGIN: 20px;
+	BACKGROUND: #fff
+}
+
+A.media {
+	DISPLAY: block
+	
+}
+
+DIV.media {
+	MARGIN: auto;
+	FONT-SIZE: small
+}
+
+DIV.media DIV {
+	FONT-STYLE: italic;
+	COLOR: #888
+}
+
+#lr {
+	BORDER-BOTTOM: #eee 1px solid;
+	BORDER-LEFT: #eee 1px solid;
+	MARGIN: auto;
+	BORDER-TOP: #eee 1px solid;
+	BORDER-RIGHT: #eee 1px solid
+}
+
+DIV.example {
+	BORDER-BOTTOM: #ccc 1px dashed;
+	TEXT-ALIGN: left;
+	BORDER-LEFT: #ccc 1px dashed;
+	PADDING-BOTTOM: 20px;
+	MARGIN: 15px 0px;
+	PADDING-LEFT: 20px;
+	PADDING-RIGHT: 20px;
+	BACKGROUND: #ffe;
+	CLEAR: left;
+	BORDER-TOP: #ccc 1px dashed;
+	BORDER-RIGHT: #ccc 1px dashed;
+	PADDING-TOP: 20px
+}
+</STYLE>
+
+<SCRIPT type=text/javascript
+	src="JQuery%20Media%20Plugin%20-%20Misc%20Demo_files/jquery.min.js"></SCRIPT>
+
+<SCRIPT type=text/javascript
+	src="JQuery%20Media%20Plugin%20-%20Misc%20Demo_files/chili-1.7.pack.js"></SCRIPT>
+
+<SCRIPT type=text/javascript
+	src="JQuery%20Media%20Plugin%20-%20Misc%20Demo_files/jquery.media.js"></SCRIPT>
+
+<SCRIPT type=text/javascript
+	src="JQuery%20Media%20Plugin%20-%20Misc%20Demo_files/jquery.metadata.js"></SCRIPT>
+
+<SCRIPT type=text/javascript>
+	$(function() {
+		$('a.media').media({
+			width : 500,
+			height : 400
+		});
+	});
+</SCRIPT>
+
+</HEAD>
+<BODY>
+
+	<DIV id=main>
+		<A class=media href="http://jquery.malsup.com/media/guice.pdf">PDF
+			File</A>
+	</DIV>
+	<SCRIPT type=text/javascript
+		src="JQuery%20Media%20Plugin%20-%20Misc%20Demo_files/urchin.js"></SCRIPT>
+
+	<SCRIPT type=text/javascript>
+		_uacct = "UA-850242-2";
+		urchinTracker();
+	</SCRIPT>
+</BODY>
+</HTML>

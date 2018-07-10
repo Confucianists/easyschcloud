@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+
+.part {
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+
+.part1 {
+	background: url('../image/part1back.png') repeat-x;
+}
+
+.pimg1 {
+	width: 1000px;
+	display: block;
+	margin: auto;
+}
+
+.part2title {
+	line-height: 150px;
+	font-size: 30px;
+}
+
+.iconsdiv {
+	width: 1000px;
+	margin: auto;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+
+.icondiv {
+	float: left;
+	width: 200px;
+}
+
+.subname {
+	line-height: 30px;
+	font-size: 18px;
+}
+
+.subtip {
+	font-size: 12px;
+	color: #959595;
+	line-height: 20px;
+}
+
+.part3back {
+	height: 190px;
+	width: 49.99%;
+	float: left;
+}
+
+.part3img {
+	display: block;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -500px;
+}
