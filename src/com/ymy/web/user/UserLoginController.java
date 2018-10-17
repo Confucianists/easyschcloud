@@ -1,4 +1,4 @@
-package com.ymy.web.user;
+﻿package com.ymy.web.user;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -71,7 +71,7 @@ public class UserLoginController {
 		}
 
 		//
-		// 登陆成功 user放入缓存
+		//  登陆成功 user放入缓存
 		HttpSession session = request.getSession();
 		// session.setMaxInactiveInterval(60*5);
 		session.setAttribute("user", user);
